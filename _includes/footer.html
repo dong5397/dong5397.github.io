@@ -1,13 +1,22 @@
 <footer>
   <div class="footer-wrap">
     <div class="footer-tagline">
-      <p>{{ site.data.settings.footer }}</p>
+      <p>© 2024 Your Name</p>
     </div>
     <div class="social-media">
       <nav>
-        {% for item in site.data.settings.social %}
-          <a href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-        {% endfor %}
+        <a href="https://twitter.com/yourprofile" target="_blank"
+          ><i class="fa fa-twitter" aria-hidden="true"></i
+        ></a>
+        <a href="https://instagram.com/yourprofile" target="_blank"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+        <a href="https://github.com/yourprofile" target="_blank"
+          ><i class="fa fa-github" aria-hidden="true"></i
+        ></a>
+        <a href="mailto:your.email@example.com" target="_blank"
+          ><i class="fa fa-envelope" aria-hidden="true"></i
+        ></a>
       </nav>
     </div>
   </div>
