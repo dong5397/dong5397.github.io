@@ -68,16 +68,49 @@
     <!-- End Jekyll SEO tag -->
     <style>
       body {
-        background: #f4f4f9;
         font-family: "Roboto", sans-serif;
+        line-height: 1.6;
         color: #333;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
       }
       .container {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 20px;
         background: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .site-container {
+        max-width: 1200px;
+        margin: 20px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        width: 100%;
+      }
+      header {
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+      }
+      header a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      header a:hover {
+        color: #ffeb3b;
       }
       h2 {
         text-align: center;
@@ -125,6 +158,22 @@
       .recommendations {
         display: none;
         margin-top: 20px;
+      }
+      footer {
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 20px;
+        border-radius: 0 0 10px 10px;
+      }
+
+      footer a {
+        color: #ffeb3b;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 1.2em;
+        transition: color 0.3s ease;
       }
     </style>
   </head>
