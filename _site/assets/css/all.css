@@ -2861,7 +2861,7 @@ footer .footer-wrap .social-media nav a:hover {
 }
 
 .project-container {
-  max-width: 1250px;
+  max-width: 750px;
   margin: 0px auto 0px;
   padding: 30px;
 }
@@ -2874,7 +2874,7 @@ footer .footer-wrap .social-media nav a:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   cursor: pointer;
   display: block;
-  width: 600px;
+  width: 750px;
   height: 300px;
   margin: 0px auto 30px;
   position: relative;
