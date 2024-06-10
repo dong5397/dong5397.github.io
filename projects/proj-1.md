@@ -1,8 +1,56 @@
 ---
 layout: post
-title: 'Project One'
+title: "Project One"
 ---
-Mauris velit metus, tempor gravida nulla eget, auctor accumsan tellus. Curabitur volutpat sed dolor quis tempus. In scelerisque aliquam felis at tincidunt. Proin non augue fringilla, [pretium justo vitae](#), maximus dui. Nunc ipsum nisi, fermentum sit amet volutpat cursus, sodales ac nisl. Quisque nec tellus sem. Cras pharetra felis non quam mollis, nec efficitur lectus aliquet. Maecenas ipsum felis, eleifend nec [semper venenatis](#), consequat ut nunc. Donec est augue, facilisis quis placerat sed, imperdiet sit amet neque. Maecenas nec risus metus. Nunc non condimentum ipsum. Phasellus consectetur dapibus massa, convallis iaculis nisi vestibulum id. Phasellus et fringilla augue. Donec consequat dui ut rutrum elementum. Aenean nisi arcu, ornare eu lacus vel, faucibus tempor tortor.
+
+여행을 계획하고 있지만 어디로 갈지 고민 중이신가요? 저희 사이트는 여러분의 취향과 선호도를 반영한 맞춤형 여행지를 추천해드립니다. 저희의 주요 기능은 설문조사를 통한 개인 맞춤형 여행지 추천과 여행일지 기록입니다. 지금부터 저희 사이트의 기능들을 소개해드리겠습니다.
+
+---
+
+### ✈️ 개인 맞춤형 여행지 추천
+
+저희 사이트의 핵심 기능은 설문조사를 통해 개개인의 취향과 선호도를 반영한 맞춤형 여행지를 추천해드리는 것입니다. 설문조사를 통해 다음과 같은 과정을 거쳐 여러분에게 최적의 여행지를 추천합니다:
+
+1. **🌍 대륙 선택**: 가장 먼저 방문하고 싶은 대륙을 선택합니다.
+2. **🇰🇷 나라 선택**: 선택한 대륙 내에서 방문하고 싶은 나라를 선택합니다.
+3. **🏖️ 여행 종류**: 어떤 종류의 여행을 선호하시는지 선택합니다.
+   - 모험
+   - 휴양
+   - 문화
+4. **💸 예산**: 여행 예산을 설정합니다.
+   - 저렴
+   - 중간
+   - 고급
+5. **🗓️ 여행 기간**: 여행 기간을 선택합니다.
+   - 짧은 기간
+   - 중간 기간
+   - 긴 기간
+6. **🏨 숙박 시설**: 선호하는 숙박 시설을 선택합니다.
+   - 호텔
+   - 호스텔
+   - BnB
+7. **👥 여행 동반자**: 누구와 함께 여행하는지 선택합니다.
+   - 혼자
+   - 가족
+   - 친구
+
+이 모든 정보를 바탕으로 여러분에게 딱 맞는 여행지를 추천해드립니다.
+
+---
+
+### 📓 여행일지 기록
+
+여행을 다녀온 후에는 여행일지를 기록할 수 있는 기능을 제공합니다. 여행 중 찍은 사진과 경험을 기록하여 나만의 여행 일지를 작성해보세요. 이렇게 작성된 여행 일지는 나중에 다시 볼 수 있도록 추억을 간직하고, 다른 여행자들과 공유할 수도 있습니다.
+
+---
+
+### ✨ 당신의 여행을 더 특별하게
+
+저희 사이트는 단순한 여행 추천을 넘어, 개개인의 취향에 맞춘 여행을 제안하여 더욱 특별하고 기억에 남는 여행을 만들어드립니다. 저희와 함께라면 여행 계획이 훨씬 쉬워지고 즐거워질 것입니다.
+
+지금 바로 설문조사를 통해 당신만의 맞춤형 여행지를 찾아보세요. 여행일지도 작성하여 잊지 못할 여행의 추억을 간직하세요. 저희와 함께라면, 당신의 여행은 더욱 특별해질 것입니다.
+
+---
 
 {% include image.html url="http://www.gratisography.com" image="projects/proj-1/dog.jpg" %}
 
