@@ -1,18 +1,21 @@
 <section>
   <div class="project-container">
     {% for project in site.data.settings.projects %}
-    <a href="{{ site.github.url }}/projects/{{ project.url }}">
+    <a href="{{ site.baseurl }}/projects/{{ project.url }}">
       <div
         class="project-unit"
-        data-folder="{{ site.github.url }}/projects/{{ project.url }}"
-        style="background-image: url({{ site.github.url }}/assets/img/projects/{{ project.url }}/main1.png);
-         "
+        data-folder="{{ site.baseurl }}/projects/{{ project.url }}"
+        style="
+          background-image: url({{ site.baseurl }}/assets/img/projects/{{ project.url }}/main1.png);
+          background-size: {% if project.url == 'proj-1' %}50%{% else %}100%{% endif %};
+        "
       >
         <div class="project-overlay">
           <strong
             >{{ project.name }}
-            <i class="fa fa-arrow-right" aria-hidden="true"></i
-          ></strong>
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            ></strong
+          >
         </div>
       </div>
     </a>
