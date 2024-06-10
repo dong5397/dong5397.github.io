@@ -5,7 +5,7 @@ title: "Project One"
 
 <section>
   <div class="post-container">
-    <h4 class="project-title">Project One</h4>
+    <h4 class="project-title">소개</h4>
     <div class="project-load">
       <p>
         여행을 계획하고 있지만 어디로 갈지 고민 중이신가요? 저희 사이트는
@@ -26,79 +26,41 @@ title: "Project One"
       </p>
 
       <div class="custom-card">
-        <div>
-          <strong>🌍 대륙 선택</strong>
-          <span>가장 먼저 방문하고 싶은 대륙을 선택합니다.</span>
+        <div class="card-header">
+          <i class="fa fa-globe icon"></i>
+          <strong>대륙 선택</strong>
         </div>
-        <div>
-          <strong>🇰🇷 나라 선택</strong>
-          <span>선택한 대륙 내에서 방문하고 싶은 나라를 선택합니다.</span>
+        <span>가장 먼저 방문하고 싶은 대륙을 선택합니다.</span>
+        <div class="card-header">
+          <i class="fa fa-flag icon"></i>
+          <strong>나라 선택</strong>
         </div>
-        <div>
-          <strong>🏖️ 여행 종류</strong>
-          <span>어떤 종류의 여행을 선호하시는지 선택합니다.</span>
-          <div>
-            <span>모험</span>
-          </div>
-          <div>
-            <span>휴양</span>
-          </div>
-          <div>
-            <span>문화</span>
-          </div>
+        <span>선택한 대륙 내에서 방문하고 싶은 나라를 선택합니다.</span>
+        <div class="card-header">
+          <i class="fa fa-suitcase icon"></i>
+          <strong>여행 종류</strong>
         </div>
-        <div>
-          <strong>💸 예산</strong>
-          <span>여행 예산을 설정합니다.</span>
-          <div>
-            <span>저렴</span>
-          </div>
-          <div>
-            <span>중간</span>
-          </div>
-          <div>
-            <span>고급</span>
-          </div>
+        <span>어떤 종류의 여행을 선호하시는지 선택합니다.</span>
+        <div class="card-header">
+          <i class="fa fa-money icon"></i>
+          <strong>예산</strong>
         </div>
-        <div>
-          <strong>🗓️ 여행 기간</strong>
-          <span>여행 기간을 선택합니다.</span>
-          <div>
-            <span>짧은 기간</span>
-          </div>
-          <div>
-            <span>중간 기간</span>
-          </div>
-          <div>
-            <span>긴 기간</span>
-          </div>
+        <span>여행 예산을 설정합니다.</span>
+        <div class="card-header">
+          <i class="fa fa-calendar icon"></i>
+          <strong>여행 기간</strong>
         </div>
-        <div>
-          <strong>🏨 숙박 시설</strong>
-          <span>선호하는 숙박 시설을 선택합니다.</span>
-          <div>
-            <span>호텔</span>
-          </div>
-          <div>
-            <span>호스텔</span>
-          </div>
-          <div>
-            <span>BnB</span>
-          </div>
+        <span>여행 기간을 선택합니다.</span>
+        <div class="card-header">
+          <i class="fa fa-bed icon"></i>
+          <strong>숙박 시설</strong>
         </div>
-        <div>
-          <strong>👥 여행 동반자</strong>
-          <span>누구와 함께 여행하는지 선택합니다.</span>
-          <div>
-            <span>혼자</span>
-          </div>
-          <div>
-            <span>가족</span>
-          </div>
-          <div>
-            <span>친구</span>
-          </div>
+        <span>선호하는 숙박 시설을 선택합니다.</span>
+        <div class="card-header">
+          <i class="fa fa-users icon"></i>
+          <strong>여행 동반자</strong>
         </div>
+        <span>누구와 함께 여행하는지 선택합니다.</span>
       </div>
 
       <p>
