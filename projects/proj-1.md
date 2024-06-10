@@ -1,57 +1,174 @@
 ---
-layout: post
+layout: default
 title: "Project One"
 ---
 
-여행을 계획하고 있지만 어디로 갈지 고민 중이신가요? 저희 사이트는 여러분의 취향과 선호도를 반영한 맞춤형 여행지를 추천해드립니다. 저희의 주요 기능은 설문조사를 통한 개인 맞춤형 여행지 추천과 여행일지 기록입니다. 지금부터 저희 사이트의 기능들을 소개해드리겠습니다.
+<section>
+  <div class="post-container">
+    <h4 class="project-title">Project One</h4>
+    <div class="project-load">
+      <p>
+        여행을 계획하고 있지만 어디로 갈지 고민 중이신가요? 저희 사이트는
+        여러분의 취향과 선호도를 반영한 맞춤형 여행지를 추천해드립니다.
+        저희의 주요 기능은 설문조사를 통한 개인 맞춤형 여행지 추천과
+        여행일지 기록입니다. 지금부터 저희 사이트의 기능들을
+        소개해드리겠습니다.
+      </p>
 
----
+      <hr />
 
-### ✈️ 개인 맞춤형 여행지 추천
+      <h3 id="️-개인-맞춤형-여행지-추천">✈️ 개인 맞춤형 여행지 추천</h3>
 
-저희 사이트의 핵심 기능은 설문조사를 통해 개개인의 취향과 선호도를 반영한 맞춤형 여행지를 추천해드리는 것입니다. 설문조사를 통해 다음과 같은 과정을 거쳐 여러분에게 최적의 여행지를 추천합니다:
+      <p>
+        저희 사이트의 핵심 기능은 설문조사를 통해 개개인의 취향과 선호도를
+        반영한 맞춤형 여행지를 추천해드리는 것입니다. 설문조사를 통해
+        다음과 같은 과정을 거쳐 여러분에게 최적의 여행지를 추천합니다:
+      </p>
 
-1. **🌍 대륙 선택**: 가장 먼저 방문하고 싶은 대륙을 선택합니다.
-2. **🇰🇷 나라 선택**: 선택한 대륙 내에서 방문하고 싶은 나라를 선택합니다.
-3. **🏖️ 여행 종류**: 어떤 종류의 여행을 선호하시는지 선택합니다.
-   - 모험
-   - 휴양
-   - 문화
-4. **💸 예산**: 여행 예산을 설정합니다.
-   - 저렴
-   - 중간
-   - 고급
-5. **🗓️ 여행 기간**: 여행 기간을 선택합니다.
-   - 짧은 기간
-   - 중간 기간
-   - 긴 기간
-6. **🏨 숙박 시설**: 선호하는 숙박 시설을 선택합니다.
-   - 호텔
-   - 호스텔
-   - BnB
-7. **👥 여행 동반자**: 누구와 함께 여행하는지 선택합니다.
-   - 혼자
-   - 가족
-   - 친구
+      <div class="custom-card">
+        <div>
+          <strong>🌍 대륙 선택</strong>
+          <span>가장 먼저 방문하고 싶은 대륙을 선택합니다.</span>
+        </div>
+        <div>
+          <strong>🇰🇷 나라 선택</strong>
+          <span>선택한 대륙 내에서 방문하고 싶은 나라를 선택합니다.</span>
+        </div>
+        <div>
+          <strong>🏖️ 여행 종류</strong>
+          <span>어떤 종류의 여행을 선호하시는지 선택합니다.</span>
+          <div>
+            <span>모험</span>
+          </div>
+          <div>
+            <span>휴양</span>
+          </div>
+          <div>
+            <span>문화</span>
+          </div>
+        </div>
+        <div>
+          <strong>💸 예산</strong>
+          <span>여행 예산을 설정합니다.</span>
+          <div>
+            <span>저렴</span>
+          </div>
+          <div>
+            <span>중간</span>
+          </div>
+          <div>
+            <span>고급</span>
+          </div>
+        </div>
+        <div>
+          <strong>🗓️ 여행 기간</strong>
+          <span>여행 기간을 선택합니다.</span>
+          <div>
+            <span>짧은 기간</span>
+          </div>
+          <div>
+            <span>중간 기간</span>
+          </div>
+          <div>
+            <span>긴 기간</span>
+          </div>
+        </div>
+        <div>
+          <strong>🏨 숙박 시설</strong>
+          <span>선호하는 숙박 시설을 선택합니다.</span>
+          <div>
+            <span>호텔</span>
+          </div>
+          <div>
+            <span>호스텔</span>
+          </div>
+          <div>
+            <span>BnB</span>
+          </div>
+        </div>
+        <div>
+          <strong>👥 여행 동반자</strong>
+          <span>누구와 함께 여행하는지 선택합니다.</span>
+          <div>
+            <span>혼자</span>
+          </div>
+          <div>
+            <span>가족</span>
+          </div>
+          <div>
+            <span>친구</span>
+          </div>
+        </div>
+      </div>
 
-이 모든 정보를 바탕으로 여러분에게 딱 맞는 여행지를 추천해드립니다.
+      <p>
+        이 모든 정보를 바탕으로 여러분에게 딱 맞는 여행지를
+        추천해드립니다.
+      </p>
 
----
+      <hr />
 
-### 📓 여행일지 기록
+      <h3 id="-여행일지-기록">📓 여행일지 기록</h3>
 
-여행을 다녀온 후에는 여행일지를 기록할 수 있는 기능을 제공합니다. 여행 중 찍은 사진과 경험을 기록하여 나만의 여행 일지를 작성해보세요. 이렇게 작성된 여행 일지는 나중에 다시 볼 수 있도록 추억을 간직하고, 다른 여행자들과 공유할 수도 있습니다.
+      <p>
+        여행을 다녀온 후에는 여행일지를 기록할 수 있는 기능을 제공합니다.
+        여행 중 찍은 사진과 경험을 기록하여 나만의 여행 일지를
+        작성해보세요. 이렇게 작성된 여행 일지는 나중에 다시 볼 수 있도록
+        추억을 간직하고, 다른 여행자들과 공유할 수도 있습니다.
+      </p>
 
----
+      <hr />
 
-### ✨ 당신의 여행을 더 특별하게
+      <h3 id="-당신의-여행을-더-특별하게">
+        ✨ 당신의 여행을 더 특별하게
+      </h3>
 
-저희 사이트는 단순한 여행 추천을 넘어, 개개인의 취향에 맞춘 여행을 제안하여 더욱 특별하고 기억에 남는 여행을 만들어드립니다. 저희와 함께라면 여행 계획이 훨씬 쉬워지고 즐거워질 것입니다.
+      <p>
+        저희 사이트는 단순한 여행 추천을 넘어, 개개인의 취향에 맞춘 여행을
+        제안하여 더욱 특별하고 기억에 남는 여행을 만들어드립니다. 저희와
+        함께라면 여행 계획이 훨씬 쉬워지고 즐거워질 것입니다.
+      </p>
 
-지금 바로 설문조사를 통해 당신만의 맞춤형 여행지를 찾아보세요. 여행일지도 작성하여 잊지 못할 여행의 추억을 간직하세요. 저희와 함께라면, 당신의 여행은 더욱 특별해질 것입니다.
+      <p>
+        지금 바로 설문조사를 통해 당신만의 맞춤형 여행지를 찾아보세요.
+        여행일지도 작성하여 잊지 못할 여행의 추억을 간직하세요. 저희와
+        함께라면, 당신의 여행은 더욱 특별해질 것입니다.
+      </p>
 
----
+      <hr />
 
-{% include image.html url="http://www.gratisography.com" image="projects/proj-1/dog.jpg" %}
+      <div class="image-container">
+        <a href="http://www.gratisography.com" target="_blank">
+          <img
+            src="{{ site.baseurl }}/assets/img/projects/proj-1/dog.jpg"
+            alt="Avatar"
+            class="image"
+          />
+          <div class="overlay">
+            <div class="text">
+              View Demo
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </div>
+          </div>
+        </a>
+      </div>
 
-{% include image.html url="http://www.gratisography.com" image="projects/proj-1/wall.jpg" %}
+      <div class="image-container">
+        <a href="http://www.gratisography.com" target="_blank">
+          <img
+            src="{{ site.baseurl }}/assets/img/projects/proj-1/wall.jpg"
+            alt="Avatar"
+            class="image"
+          />
+          <div class="overlay">
+            <div class="text">
+              View Demo
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
