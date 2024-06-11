@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/more-jekyll-themes</loc>
-<lastmod>2013-01-01T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/text-formatting-examples</loc>
-<lastmod>2014-01-01T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/getting-started</loc>
-<lastmod>2017-01-01T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/about</loc>
 </url>
 <url>
 <loc>http://localhost:4000/blog</loc>
 </url>
 <url>
-<loc>http://localhost:4000/contact</loc>
+<loc>http://localhost:4000/post</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
@@ -34,13 +22,7 @@
 <loc>http://localhost:4000/projects/proj-3</loc>
 </url>
 <url>
-<loc>http://localhost:4000/projects/proj-4</loc>
-</url>
-<url>
-<loc>http://localhost:4000/projects/proj-5</loc>
-</url>
-<url>
 <loc>http://localhost:4000/survey.html</loc>
-<lastmod>2024-06-10T21:05:01+09:00</lastmod>
+<lastmod>2024-06-11T17:13:00+09:00</lastmod>
 </url>
 </urlset>

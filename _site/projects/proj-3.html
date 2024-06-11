@@ -14,7 +14,7 @@
       content="https://plus.google.com/u/0/#"
     />
     <title>
-       Project Three
+       
       | Portfolio Jekyll Theme 
     </title>
     <link rel="stylesheet" href="/assets/css/all.css" />
@@ -47,9 +47,9 @@
 </script>
 
  <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Project Three | Portfolio Jekyll Theme</title>
+<title>Portfolio Jekyll Theme | Powered by Jekyll and GitHub Pages</title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Project Three" />
+<meta property="og:title" content="Portfolio Jekyll Theme" />
 <meta name="author" content="Paul Le" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Powered by Jekyll and GitHub Pages" />
@@ -59,9 +59,9 @@
 <meta property="og:site_name" content="Portfolio Jekyll Theme" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Project Three" />
+<meta property="twitter:title" content="Portfolio Jekyll Theme" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Paul Le"},"description":"Powered by Jekyll and GitHub Pages","headline":"Project Three","url":"http://localhost:4000/projects/proj-3"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Paul Le"},"description":"Powered by Jekyll and GitHub Pages","headline":"Portfolio Jekyll Theme","url":"http://localhost:4000/projects/proj-3"}</script>
 <!-- End Jekyll SEO tag -->
 
     <style>
@@ -73,9 +73,8 @@
         padding: 0;
         background: #f4f4f4;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        min-height: 100vh;
       }
 
       .site-container {
@@ -113,92 +112,73 @@
         font-weight: bold;
       }
 
-      .project-title {
-        font-size: 2.5em;
-        margin: 20px 0;
+      .hero {
+        background: url("/assets/img/hero.jpg") no-repeat
+          center center/cover;
+        padding: 100px 20px;
         text-align: center;
-        color: #333;
-        text-transform: uppercase;
-      }
-
-      .post-container {
-        background: #fafafa;
-        padding: 40px;
-        margin: 20px 0;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-        text-align: center;
-      }
-
-      .post-container p {
-        font-size: 1.2em;
-        line-height: 1.8;
-        color: #555;
-      }
-
-      .custom-card {
-        background: #fff;
-        border: 1px solid #ddd;
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-        text-align: left;
-      }
-
-      .custom-card div {
-        margin-bottom: 10px;
-      }
-
-      .custom-card strong {
-        display: block;
-        margin-bottom: 5px;
-      }
-
-      .image-container {
-        position: relative;
+        color: #fff;
         width: 100%;
-        max-width: 600px;
-        margin: 20px auto;
+        border-radius: 10px;
+      }
+
+      .hero-content h1 {
+        font-size: 3em;
+        margin: 0;
+      }
+
+      .hero-content p {
+        font-size: 1.5em;
+        margin: 10px 0 0;
+      }
+
+      .projects-section {
+        padding: 20px;
+      }
+
+      .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .project-link {
+        text-decoration: none;
+      }
+
+      .project-unit {
+        background-size: cover;
+        background-position: center;
+        width: 300px;
+        height: 400px;
+        position: relative;
         overflow: hidden;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
       }
 
-      .image-container img {
-        width: 100%;
-        transition: transform 0.5s ease;
+      .project-unit:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
       }
 
-      .image-container:hover img {
-        transform: scale(1.1);
-      }
-
-      .overlay {
+      .project-overlay {
         position: absolute;
-        top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: 0.5s ease;
-        background-color: rgba(0, 0, 0, 0.7);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 1.5em;
-        border-radius: 10px;
-      }
-
-      .image-container:hover .overlay {
-        opacity: 1;
-      }
-
-      .overlay .text {
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
         text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .project-unit:hover .project-overlay {
+        opacity: 1;
       }
 
       footer {
@@ -208,6 +188,7 @@
         text-align: center;
         margin-top: 20px;
         border-radius: 0 0 10px 10px;
+        width: 100%;
       }
 
       footer a {
@@ -222,38 +203,63 @@
         color: #fff;
       }
 
-      h2 {
-        color: #333;
+      .blog-container {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .blog-unit {
+        background: #fff;
+        padding: 20px;
         margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
-      h3 {
-        color: #555;
-        margin-bottom: 10px;
+      .blog-unit h1 {
+        margin: 0 0 10px;
       }
 
-      .info-section {
-        background: #eee;
+      .blog-unit .blog-date {
+        font-size: 0.9em;
+        color: #999;
+      }
+
+      .form-container {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .form-container h2 {
+        margin-top: 0;
+      }
+
+      .form-container input[type="text"],
+      .form-container textarea {
+        width: 100%;
+        padding: 10px;
         margin: 10px 0;
-        padding: 15px;
         border-radius: 5px;
-        text-align: left;
+        border: 1px solid #ccc;
       }
 
-      .info-section strong {
-        display: block;
-        margin-bottom: 5px;
+      .form-container button {
+        padding: 10px 20px;
+        background: #6e8efb;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
       }
 
-      .icon {
-        font-size: 1.5em;
-        margin-right: 10px;
-        color: #6e8efb;
-      }
-
-      .card-header {
-        display: flex;
-        align-items: center;
+      .form-container button:hover {
+        background: #a777e3;
       }
     </style>
   </head>
@@ -264,50 +270,258 @@
     <a href="/">해외여행지 추천</a>
   </div>
   <nav>
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
+    <a href="/">Home</a>
+    <a href="/blog">Blog</a>
+    <a href="/post">Post</a>
     <a href="/survey">survey</a>
   </nav>
 </header>
- <section>
+ <style>
+  .form-container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+  }
+
+  .form-container h2 {
+    text-align: center;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .form-container button:hover {
+    background-color: #45a049;
+  }
+</style>
+
+<section>
+  <div class="form-container">
+    <h2>새 글 작성하기</h2>
+    <form id="blog-post-form">
+      <input type="text" id="title" name="title" placeholder="Title" required />
+      <textarea
+        id="content"
+        name="content"
+        rows="10"
+        placeholder="Content"
+        required
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
   <div class="post-container">
-    <h4 class="project-title">Project Three</h4>
-    <div class="project-load"><p>Donec condimentum a leo nec posuere. Vestibulum faucibus leo nec nisl varius vestibulum. Aenean vel quam semper, vestibulum augue at, rutrum ligula. Ut gravida, ex sit amet fringilla luctus, lorem quam mollis elit, et tristique leo urna non odio. Curabitur elementum viverra consequat. Vestibulum vitae dolor tristique, pellentesque metus non, suscipit nunc. Aenean id sem eu libero sodales dignissim eget quis quam. Phasellus quis lectus ac odio convallis luctus. Praesent sed ligula ipsum. Nullam ultricies nunc nec turpis porttitor elementum. Vestibulum vitae imperdiet elit, nec mattis magna. Vestibulum id neque nec turpis ullamcorper rutrum ac non ligula. Quisque nec pellentesque diam. Vestibulum at aliquam mi, vitae fringilla quam. Suspendisse potenti.</p>
+    <h4 class="project-title"></h4>
+    <div class="project-load"><style>
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
 
-<div class="image-container">
-  <a href="http://www.gratisography.com" target="_blank">
-    <img src="/assets/img/projects/proj-3/clothes.jpg" alt="Avatar" class="image" />
-    <div class="overlay">
-      <div class="text">
-        
-          View Demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        
-      </div>
-    </div>
-  </a>
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  h1, h2 {
+    color: #663399; /* 보라색 */
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  h1::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background: #ffd700; /* 금색 */
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #ffd700; /* 금색 */
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+  }
+
+  p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+
+  li:hover {
+    transform: translateY(-5px);
+  }
+
+  .contact-info p {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 5px solid #663399;
+    border-radius: 5px;
+  }
+
+  .contact-info a {
+    color: #663399;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .contact-info a:hover {
+    color: #ffd700; /* 금색 */
+    text-decoration: underline;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+  }
+</style>
+
+<div class="container">
+  <h1>인사말</h1>
+  <p>안녕하세요! 저희 웹사이트를 방문해 주셔서 감사합니다. 저희는 최고의 서비스를 제공하기 위해 항상 노력하고 있습니다. 언제든지 문의 사항이나 도움이 필요하시면 연락 주시기 바랍니다.</p>
+
+  <h2>대학생활</h2>
+  <ul>
+    <li><strong>2019년</strong>: 학교 입학</li>
+    <li><strong>2020년</strong>: 2학년, 코로나</li>
+    <li><strong>2021~22년</strong>: 군대 입대</li>
+    <li><strong>2023년</strong>: 복학</li>
+    <li><strong>2024년</strong>: 4학년 시작</li>
+  </ul>
+
+  <h2>조직도</h2>
+  <ul>
+    <li><strong>대학생</strong>: 김동욱</li>
+    
+  </ul>
+
+  <h2>연락처</h2>
+  <div class="contact-info">
+  <p><strong>이름</strong>: 김동욱</p>
+    <p><strong>전화번호</strong>: 010-2848-5397</p>
+    <p><strong>이메일</strong>: <a href="mailto:ehddnr5397@naver.com">ehddnr5397@naver.com</a></p>
+  </div>
+
+  <p>저희와 함께 더 나은 미래를 만들어 갑시다. 언제든지 연락 주시면 친절히 응대하겠습니다.</p>
+
+  <div class="footer">
+    &copy; 2024 해외여행 추천 사이트
+  </div>
 </div>
-
 </div>
   </div>
   
 </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // 새로운 블로그 포스트 작성 폼 제출 처리
+    $("#blog-post-form").submit(function (event) {
+      event.preventDefault();
+      const postData = {
+        title: $("#title").val(),
+        content: $("#content").val(),
+      };
+
+      $.ajax({
+        url: "https://tododebackend.fly.dev/api/v1/posts",
+        method: "POST",
+        contentType: "application/json",
+        data: JSON.stringify(postData),
+        success: function (data) {
+          alert("Post created successfully!");
+          // 폼 초기화
+          $("#blog-post-form")[0].reset();
+        },
+        error: function (err) {
+          console.error("Error creating post:", err);
+          alert("Failed to create post.");
+        },
+      });
+    });
+  });
+</script>
  <footer>
   <div class="footer-wrap">
     <div class="footer-tagline">
-      <p>© 2024 Your Name</p>
+      <p>© 2024 해외여행 추천 사이트</p>
     </div>
     <div class="social-media">
       <nav>
-        <a href="https://twitter.com/yourprofile" target="_blank"
-          ><i class="fa fa-twitter" aria-hidden="true"></i
-        ></a>
-        <a href="https://instagram.com/yourprofile" target="_blank"
-          ><i class="fa fa-instagram" aria-hidden="true"></i
-        ></a>
-        <a href="https://github.com/yourprofile" target="_blank"
+        <a href="https://github.com/dong5397" target="_blank"
           ><i class="fa fa-github" aria-hidden="true"></i
         ></a>
-        <a href="mailto:your.email@example.com" target="_blank"
+        <a href="mailto:ehddnr5397@naver.com" target="_blank"
           ><i class="fa fa-envelope" aria-hidden="true"></i
         ></a>
       </nav>
@@ -317,5 +531,31 @@
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#blog-post-form").submit(function (event) {
+          event.preventDefault();
+          const postData = {
+            title: $("#title").val(),
+            content: $("#content").val(),
+          };
+
+          $.ajax({
+            url: "http://localhost:3000/api/posts",
+            method: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(postData),
+            success: function (data) {
+              alert("Post created successfully!");
+              location.reload();
+            },
+            error: function (err) {
+              console.error("Error creating post:", err);
+              alert("Failed to create post.");
+            },
+          });
+        });
+      });
+    </script>
   </body>
 </html>

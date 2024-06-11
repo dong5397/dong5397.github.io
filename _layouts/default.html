@@ -45,9 +45,8 @@
         padding: 0;
         background: #f4f4f4;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        min-height: 100vh;
       }
 
       .site-container {
@@ -85,92 +84,73 @@
         font-weight: bold;
       }
 
-      .project-title {
-        font-size: 2.5em;
-        margin: 20px 0;
+      .hero {
+        background: url("{{ site.baseurl }}/assets/img/hero.jpg") no-repeat
+          center center/cover;
+        padding: 100px 20px;
         text-align: center;
-        color: #333;
-        text-transform: uppercase;
-      }
-
-      .post-container {
-        background: #fafafa;
-        padding: 40px;
-        margin: 20px 0;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-        text-align: center;
-      }
-
-      .post-container p {
-        font-size: 1.2em;
-        line-height: 1.8;
-        color: #555;
-      }
-
-      .custom-card {
-        background: #fff;
-        border: 1px solid #ddd;
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-        text-align: left;
-      }
-
-      .custom-card div {
-        margin-bottom: 10px;
-      }
-
-      .custom-card strong {
-        display: block;
-        margin-bottom: 5px;
-      }
-
-      .image-container {
-        position: relative;
+        color: #fff;
         width: 100%;
-        max-width: 600px;
-        margin: 20px auto;
+        border-radius: 10px;
+      }
+
+      .hero-content h1 {
+        font-size: 3em;
+        margin: 0;
+      }
+
+      .hero-content p {
+        font-size: 1.5em;
+        margin: 10px 0 0;
+      }
+
+      .projects-section {
+        padding: 20px;
+      }
+
+      .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .project-link {
+        text-decoration: none;
+      }
+
+      .project-unit {
+        background-size: cover;
+        background-position: center;
+        width: 300px;
+        height: 400px;
+        position: relative;
         overflow: hidden;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
       }
 
-      .image-container img {
-        width: 100%;
-        transition: transform 0.5s ease;
+      .project-unit:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
       }
 
-      .image-container:hover img {
-        transform: scale(1.1);
-      }
-
-      .overlay {
+      .project-overlay {
         position: absolute;
-        top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: 0.5s ease;
-        background-color: rgba(0, 0, 0, 0.7);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 1.5em;
-        border-radius: 10px;
-      }
-
-      .image-container:hover .overlay {
-        opacity: 1;
-      }
-
-      .overlay .text {
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
         text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .project-unit:hover .project-overlay {
+        opacity: 1;
       }
 
       footer {
@@ -180,6 +160,7 @@
         text-align: center;
         margin-top: 20px;
         border-radius: 0 0 10px 10px;
+        width: 100%;
       }
 
       footer a {
@@ -194,38 +175,63 @@
         color: #fff;
       }
 
-      h2 {
-        color: #333;
+      .blog-container {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .blog-unit {
+        background: #fff;
+        padding: 20px;
         margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
-      h3 {
-        color: #555;
-        margin-bottom: 10px;
+      .blog-unit h1 {
+        margin: 0 0 10px;
       }
 
-      .info-section {
-        background: #eee;
+      .blog-unit .blog-date {
+        font-size: 0.9em;
+        color: #999;
+      }
+
+      .form-container {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .form-container h2 {
+        margin-top: 0;
+      }
+
+      .form-container input[type="text"],
+      .form-container textarea {
+        width: 100%;
+        padding: 10px;
         margin: 10px 0;
-        padding: 15px;
         border-radius: 5px;
-        text-align: left;
+        border: 1px solid #ccc;
       }
 
-      .info-section strong {
-        display: block;
-        margin-bottom: 5px;
+      .form-container button {
+        padding: 10px 20px;
+        background: #6e8efb;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
       }
 
-      .icon {
-        font-size: 1.5em;
-        margin-right: 10px;
-        color: #6e8efb;
-      }
-
-      .card-header {
-        display: flex;
-        align-items: center;
+      .form-container button:hover {
+        background: #a777e3;
       }
     </style>
   </head>
@@ -234,5 +240,31 @@
       {% include header.html %} {{ content }} {% include footer.html %}
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#blog-post-form").submit(function (event) {
+          event.preventDefault();
+          const postData = {
+            title: $("#title").val(),
+            content: $("#content").val(),
+          };
+
+          $.ajax({
+            url: "http://localhost:3000/api/posts",
+            method: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(postData),
+            success: function (data) {
+              alert("Post created successfully!");
+              location.reload();
+            },
+            error: function (err) {
+              console.error("Error creating post:", err);
+              alert("Failed to create post.");
+            },
+          });
+        });
+      });
+    </script>
   </body>
 </html>
