@@ -1,0 +1,3964 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Personal portfolio powered by Jekyll and GitHub Pages"
+    />
+    <meta rel="author" href="https://plus.google.com/u/0/#" />
+    <meta rel="publisher" href="https://plus.google.com/u/0/#" />
+    <title>Portfolio Jekyll Theme</title>
+    <link rel="stylesheet" href="/assets/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <!--[if lt IE 9
+      ]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script
+    ><![endif]-->
+    <!-- Use Atom -->
+    <link
+      type="application/atom+xml"
+      rel="alternate"
+      href="http://localhost:4000/feed.xml"
+      title="Portfolio Jekyll Theme"
+    />
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+
+    <!-- Use Jekyll SEO plugin -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+    <title>Home | Portfolio Jekyll Theme</title>
+    <meta name="generator" content="Jekyll v4.3.3" />
+    <meta property="og:title" content="Home" />
+    <meta name="author" content="Paul Le" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="Powered by Jekyll and GitHub Pages" />
+    <meta
+      property="og:description"
+      content="Powered by Jekyll and GitHub Pages"
+    />
+    <link rel="canonical" href="http://localhost:4000/" />
+    <meta property="og:url" content="http://localhost:4000/" />
+    <meta property="og:site_name" content="Portfolio Jekyll Theme" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Home" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "author": { "@type": "Person", "name": "Paul Le" },
+        "description": "Powered by Jekyll and GitHub Pages",
+        "headline": "Home",
+        "name": "Portfolio Jekyll Theme",
+        "url": "http://localhost:4000/"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #fff;
+      }
+      .site-container {
+        max-width: 1200px;
+        margin: 20px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        width: 100%;
+      }
+      header {
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+      }
+      header a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      .logo a {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      header a:hover {
+        color: #ffeb3b;
+      }
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .continent {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+      }
+      .country-list {
+        display: none;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      label {
+        font-size: 18px;
+        color: #555;
+      }
+      input[type="radio"] {
+        margin-right: 10px;
+      }
+      .btn {
+        align-self: center;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #fff;
+        background: #007bff;
+        border: none;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: #0056b3;
+      }
+      .survey {
+        display: none;
+      }
+      .survey h2 {
+        text-align: center;
+      }
+      .recommendations {
+        display: none;
+        margin-top: 20px;
+      }
+      footer {
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 20px;
+        border-radius: 0 0 10px 10px;
+      }
+
+      footer a {
+        color: #ffeb3b;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 1.2em;
+        transition: color 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-container">
+      <header>
+        <div class="logo">
+          <a href="/">해외여행지 추천</a>
+        </div>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/blog">Blog</a>
+        </nav>
+      </header>
+
+      <section>
+        <div class="container">
+          <h2>해외여행지 추천 설문조사</h2>
+          <form id="surveyForm">
+            <div class="continent">
+              <input type="radio" id="asia" name="continent" value="Asia" />
+              <label for="asia">아시아</label>
+              <div class="country-list" id="asia-countries">
+                <input type="radio" id="japan" name="country" value="Japan" />
+                <label for="japan">일본</label><br />
+                <input type="radio" id="china" name="country" value="China" />
+                <label for="china">중국</label><br />
+                <input
+                  type="radio"
+                  id="thailand"
+                  name="country"
+                  value="Thailand"
+                />
+                <label for="thailand">태국</label><br />
+              </div>
+            </div>
+            <div class="continent">
+              <input type="radio" id="europe" name="continent" value="Europe" />
+              <label for="europe">유럽</label>
+              <div class="country-list" id="europe-countries">
+                <input type="radio" id="france" name="country" value="France" />
+                <label for="france">프랑스</label><br />
+                <input
+                  type="radio"
+                  id="germany"
+                  name="country"
+                  value="Germany"
+                />
+                <label for="germany">독일</label><br />
+                <input type="radio" id="italy" name="country" value="Italy" />
+                <label for="italy">이탈리아</label><br />
+              </div>
+            </div>
+            <div class="continent">
+              <input
+                type="radio"
+                id="north-america"
+                name="continent"
+                value="North America"
+              />
+              <label for="north-america">북아메리카</label>
+              <div class="country-list" id="north-america-countries">
+                <input type="radio" id="usa" name="country" value="USA" />
+                <label for="usa">미국</label><br />
+                <input type="radio" id="canada" name="country" value="Canada" />
+                <label for="canada">캐나다</label><br />
+                <input type="radio" id="mexico" name="country" value="Mexico" />
+                <label for="mexico">멕시코</label><br />
+              </div>
+            </div>
+            <div class="continent">
+              <input
+                type="radio"
+                id="south-america"
+                name="continent"
+                value="South America"
+              />
+              <label for="south-america">남아메리카</label>
+              <div class="country-list" id="south-america-countries">
+                <input type="radio" id="brazil" name="country" value="Brazil" />
+                <label for="brazil">브라질</label><br />
+                <input
+                  type="radio"
+                  id="argentina"
+                  name="country"
+                  value="Argentina"
+                />
+                <label for="argentina">아르헨티나</label><br />
+                <input type="radio" id="chile" name="country" value="Chile" />
+                <label for="chile">칠레</label><br />
+              </div>
+            </div>
+            <div class="continent">
+              <input type="radio" id="africa" name="continent" value="Africa" />
+              <label for="africa">아프리카</label>
+              <div class="country-list" id="africa-countries">
+                <input type="radio" id="egypt" name="country" value="Egypt" />
+                <label for="egypt">이집트</label><br />
+                <input
+                  type="radio"
+                  id="south-africa"
+                  name="country"
+                  value="South Africa"
+                />
+                <label for="south-africa">남아프리카공화국</label><br />
+                <input type="radio" id="kenya" name="country" value="Kenya" />
+                <label for="kenya">케냐</label><br />
+              </div>
+            </div>
+            <div class="continent">
+              <input
+                type="radio"
+                id="oceania"
+                name="continent"
+                value="Oceania"
+              />
+              <label for="oceania">오세아니아</label>
+              <div class="country-list" id="oceania-countries">
+                <input
+                  type="radio"
+                  id="australia"
+                  name="country"
+                  value="Australia"
+                />
+                <label for="australia">호주</label><br />
+                <input
+                  type="radio"
+                  id="new-zealand"
+                  name="country"
+                  value="New Zealand"
+                />
+                <label for="new-zealand">뉴질랜드</label><br />
+              </div>
+            </div>
+            <button type="button" class="btn" onclick="showSurvey()">
+              다음
+            </button>
+            <div class="survey" id="survey">
+              <h2>추가 설문조사</h2>
+              <label for="travelType">어떤 종류의 여행을 선호하십니까?</label
+              ><br />
+              <input
+                type="radio"
+                id="adventure"
+                name="travelType"
+                value="Adventure"
+              />
+              <label for="adventure">모험</label><br />
+              <input
+                type="radio"
+                id="relaxation"
+                name="travelType"
+                value="Relaxation"
+              />
+              <label for="relaxation">휴양</label><br />
+              <input
+                type="radio"
+                id="cultural"
+                name="travelType"
+                value="Cultural"
+              />
+              <label for="cultural">문화</label><br /><br />
+
+              <label for="budget">예산은 어떻게 되십니까?</label><br />
+              <input type="radio" id="low" name="budget" value="Low" />
+              <label for="low">저렴</label><br />
+              <input type="radio" id="medium" name="budget" value="Medium" />
+              <label for="medium">중간</label><br />
+              <input type="radio" id="high" name="budget" value="High" />
+              <label for="high">고급</label><br /><br />
+
+              <label for="travelTime">여행 기간은 얼마나 되십니까?</label><br />
+              <input type="radio" id="short" name="travelTime" value="Short" />
+              <label for="short">짧은 기간</label><br />
+              <input
+                type="radio"
+                id="medium"
+                name="travelTime"
+                value="Medium"
+              />
+              <label for="medium">중간 기간</label><br />
+              <input type="radio" id="long" name="travelTime" value="Long" />
+              <label for="long">긴 기간</label><br /><br />
+
+              <label for="accommodation">어떤 숙박 시설을 선호하십니까?</label
+              ><br />
+              <input
+                type="radio"
+                id="hotel"
+                name="accommodation"
+                value="Hotel"
+              />
+              <label for="hotel">호텔</label><br />
+
+              <br /><br />
+
+              <label for="travelCompanion">누구와 함께 여행하십니까?</label
+              ><br />
+              <input
+                type="radio"
+                id="alone"
+                name="travelCompanion"
+                value="Alone"
+              />
+              <label for="alone">혼자</label><br />
+              <input
+                type="radio"
+                id="family"
+                name="travelCompanion"
+                value="Family"
+              />
+              <label for="family">가족</label><br />
+              <input
+                type="radio"
+                id="friends"
+                name="travelCompanion"
+                value="Friends"
+              />
+              <label for="friends">친구</label><br /><br />
+
+              <button type="button" class="btn" onclick="showRecommendations()">
+                제출
+              </button>
+            </div>
+            <div class="recommendations" id="recommendations"></div>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-wrap">
+          <div class="footer-tagline">
+            <p></p>
+          </div>
+          <div class="social-media">
+            <nav>
+              <a href="https://twitter.com/paululele" target="_blank"
+                ><i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+              <a href="https://instagram.com/paululele" target="_blank"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a href="https://github.com/lenpaul" target="_blank"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+              <a href="https://linkedin.com/in/lenpaul" target="_blank"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+              <a href="mailto:mailto:l.nguyen.paul@gmail.com" target="_blank"
+                ><i class="fa fa-envelope" aria-hidden="true"></i
+              ></a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      document
+        .querySelectorAll('input[type="radio"][name="continent"]')
+        .forEach((rb) => {
+          rb.addEventListener("change", function () {
+            const countryLists = document.querySelectorAll(".country-list");
+            countryLists.forEach((list) => {
+              list.style.display = "none";
+            });
+            const countryList = document.getElementById(this.id + "-countries");
+            if (this.checked) {
+              countryList.style.display = "block";
+            }
+          });
+        });
+
+      function showSurvey() {
+        const selectedCountry = document.querySelector(
+          'input[type="radio"][name="country"]:checked'
+        );
+        if (selectedCountry) {
+          document.getElementById("survey").style.display = "block";
+          window.scrollTo(0, document.getElementById("survey").offsetTop);
+        } else {
+          alert("먼저 대륙과 국가를 선택해주세요.");
+        }
+      }
+
+      function showRecommendations() {
+        const travelType = document.querySelector(
+          'input[name="travelType"]:checked'
+        ).value;
+        const budget = document.querySelector(
+          'input[name="budget"]:checked'
+        ).value;
+        const travelTime = document.querySelector(
+          'input[name="travelTime"]:checked'
+        ).value;
+        const accommodation = document.querySelector(
+          'input[name="accommodation"]:checked'
+        ).value;
+        const travelCompanion = document.querySelector(
+          'input[name="travelCompanion"]:checked'
+        ).value;
+        const selectedCountry = document.querySelector(
+          'input[type="radio"][name="country"]:checked'
+        ).value;
+        const recommendationsDiv = document.getElementById("recommendations");
+
+        const recommendations = {
+          Japan: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "후지산",
+                    Family: "하코네",
+                    Friends: "니세코",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "다이센",
+                    Family: "알프스",
+                    Friends: "시코쿠",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "야쿠시마",
+                    Family: "구마노",
+                    Friends: "홋카이도",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "다카오",
+                    Family: "후쿠오카",
+                    Friends: "가고시마",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "텐잔",
+                    Family: "미나미알프스",
+                    Friends: "이와테",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "야리타케",
+                    Family: "다이세츠잔",
+                    Friends: "오제",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "아소",
+                    Family: "츠루미",
+                    Friends: "이부키",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "다이바",
+                    Family: "치치부",
+                    Friends: "시레토코",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "오야마",
+                    Family: "아시타카",
+                    Friends: "유후",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "하코네",
+                    Family: "벳푸",
+                    Friends: "기노사키",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "구사츠",
+                    Family: "아타미",
+                    Friends: "이토",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "시부",
+                    Family: "유후인",
+                    Friends: "노보리베츠",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "나가사키",
+                    Family: "아리마",
+                    Friends: "가루이자와",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "이즈",
+                    Family: "시라하마",
+                    Friends: "기타큐슈",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "구로카와",
+                    Family: "니세코",
+                    Friends: "후쿠시마",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "도야마",
+                    Family: "기후",
+                    Friends: "오이타",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "와카야마",
+                    Family: "아오모리",
+                    Friends: "야마가타",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "사이타마",
+                    Family: "에히메",
+                    Friends: "가나자와",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "교토",
+                    Family: "나라",
+                    Friends: "카마쿠라",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "아스카",
+                    Family: "니코",
+                    Friends: "이세",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "교토",
+                    Family: "히로시마",
+                    Friends: "오사카",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "가나자와",
+                    Family: "다카야마",
+                    Friends: "마쓰야마",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "오키나와",
+                    Family: "고베",
+                    Friends: "하카타",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "우지",
+                    Family: "구마모토",
+                    Friends: "센다이",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "가고시마",
+                    Family: "시즈오카",
+                    Friends: "미에",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "시가",
+                    Family: "나가노",
+                    Friends: "아이치",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "후쿠오카",
+                    Family: "토야마",
+                    Friends: "에히메",
+                  },
+                },
+              },
+            },
+          },
+          China: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "장가계",
+                    Family: "구채구",
+                    Friends: "황산",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "태항산",
+                    Family: "서하",
+                    Friends: "계림",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "오대산",
+                    Family: "백두산",
+                    Friends: "사하라",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "아바산",
+                    Family: "설산",
+                    Friends: "노산",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "칠대산",
+                    Family: "반달산",
+                    Friends: "연화산",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "우릉산",
+                    Family: "서강",
+                    Friends: "아미산",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "장백산",
+                    Family: "쿤룬산",
+                    Friends: "천산",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "화산",
+                    Family: "용문산",
+                    Friends: "종산",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "무이산",
+                    Family: "중삼청산",
+                    Friends: "백두산",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "하이난",
+                    Family: "산야",
+                    Friends: "대련",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "청도",
+                    Family: "천진",
+                    Friends: "남해",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "서귀포",
+                    Family: "여수",
+                    Friends: "보령",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "북해",
+                    Family: "항주",
+                    Friends: "소주",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "복주",
+                    Family: "삼아",
+                    Friends: "광주",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "백두산",
+                    Family: "서안",
+                    Friends: "난징",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "장사",
+                    Family: "귀주",
+                    Friends: "서온",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "삼문",
+                    Family: "경주",
+                    Friends: "진주",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "여수",
+                    Family: "울산",
+                    Friends: "광양",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "베이징",
+                    Family: "시안",
+                    Friends: "항주",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "난징",
+                    Family: "광저우",
+                    Friends: "장춘",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "상하이",
+                    Family: "청두",
+                    Friends: "심천",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "쿤밍",
+                    Family: "구이린",
+                    Friends: "창사",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "청도",
+                    Family: "다롄",
+                    Friends: "푸저우",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "우한",
+                    Family: "남경",
+                    Friends: "서안",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "홍콩",
+                    Family: "마카오",
+                    Friends: "대만",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "타이베이",
+                    Family: "가오슝",
+                    Friends: "타이중",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "칭다오",
+                    Family: "하얼빈",
+                    Friends: "톈진",
+                  },
+                },
+              },
+            },
+          },
+          Thailand: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "치앙마이",
+                    Family: "카오야이",
+                    Friends: "칸차나부리",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "피피섬",
+                    Family: "수코타이",
+                    Friends: "아유타야",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "코팡안",
+                    Family: "파타야",
+                    Friends: "라용",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "우타이타니",
+                    Family: "치앙라이",
+                    Friends: "후아힌",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "트랏",
+                    Family: "카오락",
+                    Friends: "코사무이",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "무궤이",
+                    Family: "카오속",
+                    Friends: "코창",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "코사멧",
+                    Family: "라차섬",
+                    Friends: "코란타",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "카오야이",
+                    Family: "치앙칸",
+                    Friends: "뜨랑",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "매홍손",
+                    Family: "람푼",
+                    Friends: "람빵",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "푸켓",
+                    Family: "크라비",
+                    Friends: "코팡안",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "코사무이",
+                    Family: "코창",
+                    Friends: "코란타",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "코사멧",
+                    Family: "코타오",
+                    Friends: "코라차",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "끄라비",
+                    Family: "카오락",
+                    Friends: "라차섬",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "카말라",
+                    Family: "코타오",
+                    Friends: "파타야",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "코팡안",
+                    Family: "코란타",
+                    Friends: "코사멧",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "코사멧",
+                    Family: "코타오",
+                    Friends: "코팡안",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "코란타",
+                    Family: "코라차",
+                    Friends: "코창",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "코사무이",
+                    Family: "코타오",
+                    Friends: "코란타",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "방콕",
+                    Family: "아유타야",
+                    Friends: "수코타이",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "치앙마이",
+                    Family: "치앙라이",
+                    Friends: "라용",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "우타이타니",
+                    Family: "파타야",
+                    Friends: "칸차나부리",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "후아힌",
+                    Family: "라차섬",
+                    Friends: "코사멧",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "뜨랑",
+                    Family: "코창",
+                    Friends: "코타오",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "코팡안",
+                    Family: "코란타",
+                    Friends: "코사무이",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "치앙칸",
+                    Family: "람푼",
+                    Friends: "람빵",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "매홍손",
+                    Family: "뜨랑",
+                    Friends: "코사멧",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "코타오",
+                    Family: "코라차",
+                    Friends: "코창",
+                  },
+                },
+              },
+            },
+          },
+          France: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "샤모니",
+                    Family: "안시",
+                    Friends: "샤모니",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "메제브",
+                    Family: "그르노블",
+                    Friends: "메제브",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "샹보르",
+                    Family: "페르쉐",
+                    Friends: "샹보르",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "리옹",
+                    Family: "리옹",
+                    Friends: "보르도",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "프레쥐스",
+                    Family: "카시",
+                    Friends: "프레쥐스",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "몽블랑",
+                    Family: "브리앙송",
+                    Friends: "몽블랑",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "니스",
+                    Family: "니카이",
+                    Friends: "니스",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "페름",
+                    Family: "발디제르",
+                    Friends: "페름",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "오베르뉴",
+                    Family: "샤몽",
+                    Friends: "오베르뉴",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "니스",
+                    Family: "칸",
+                    Friends: "니스",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "비아리츠",
+                    Family: "앙티브",
+                    Friends: "비아리츠",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "마르세유",
+                    Family: "생트로페",
+                    Friends: "마르세유",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "아비뇽",
+                    Family: "아를",
+                    Friends: "아비뇽",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "로셸",
+                    Family: "몽펠리에",
+                    Friends: "로셸",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "바이외",
+                    Family: "낭트",
+                    Friends: "바이외",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "루앙",
+                    Family: "디에프",
+                    Friends: "루앙",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "생말로",
+                    Family: "도빌",
+                    Friends: "생말로",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "랭스",
+                    Family: "슈세",
+                    Friends: "랭스",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "파리",
+                    Family: "루브르",
+                    Friends: "파리",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "몽생미셸",
+                    Family: "베르사유",
+                    Friends: "몽생미셸",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "스트라스부르",
+                    Family: "디종",
+                    Friends: "스트라스부르",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "르망",
+                    Family: "앙제",
+                    Friends: "르망",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "오를레앙",
+                    Family: "투르",
+                    Friends: "오를레앙",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "니스",
+                    Family: "보르도",
+                    Friends: "니스",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "리옹",
+                    Family: "루앙",
+                    Friends: "리옹",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "스트라스부르",
+                    Family: "낭트",
+                    Friends: "스트라스부르",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "보르도",
+                    Family: "마르세유",
+                    Friends: "보르도",
+                  },
+                },
+              },
+            },
+          },
+
+          Germany: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "하르츠",
+                    Family: "작센",
+                    Friends: "바이오와르트",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "작센",
+                    Family: "바이에른",
+                    Friends: "튀링겐",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "알프스",
+                    Family: "블랙포레스트",
+                    Friends: "바이에른",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "바이오와르트",
+                    Family: "하르츠",
+                    Friends: "작센",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "작센",
+                    Family: "튀링겐",
+                    Friends: "바이에른",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "블랙포레스트",
+                    Family: "바이에른",
+                    Friends: "알프스",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "알프스",
+                    Family: "블랙포레스트",
+                    Friends: "바이오와르트",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "튀링겐",
+                    Family: "작센",
+                    Friends: "하르츠",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "바이에른",
+                    Family: "알프스",
+                    Friends: "블랙포레스트",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "바덴바덴",
+                    Family: "비스바덴",
+                    Friends: "바덴바덴",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "비스바덴",
+                    Family: "프라이부르크",
+                    Friends: "비스바덴",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "프라이부르크",
+                    Family: "바덴바덴",
+                    Friends: "프라이부르크",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "바덴바덴",
+                    Family: "비스바덴",
+                    Friends: "프라이부르크",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "프라이부르크",
+                    Family: "바덴바덴",
+                    Friends: "비스바덴",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "비스바덴",
+                    Family: "프라이부르크",
+                    Friends: "바덴바덴",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "프라이부르크",
+                    Family: "바덴바덴",
+                    Friends: "비스바덴",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "비스바덴",
+                    Family: "프라이부르크",
+                    Friends: "바덴바덴",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "바덴바덴",
+                    Family: "비스바덴",
+                    Friends: "프라이부르크",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "베를린",
+                    Family: "뮌헨",
+                    Friends: "베를린",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "하이델베르크",
+                    Family: "드레스덴",
+                    Friends: "하이델베르크",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "프랑크푸르트",
+                    Family: "쾰른",
+                    Friends: "프랑크푸르트",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "드레스덴",
+                    Family: "하이델베르크",
+                    Friends: "드레스덴",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "뉘른베르크",
+                    Family: "브레멘",
+                    Friends: "뉘른베르크",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "쾰른",
+                    Family: "프랑크푸르트",
+                    Friends: "쾰른",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "뮌헨",
+                    Family: "베를린",
+                    Friends: "뮌헨",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "하이델베르크",
+                    Family: "드레스덴",
+                    Friends: "하이델베르크",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "쾰른",
+                    Family: "프랑크푸르트",
+                    Friends: "쾰른",
+                  },
+                },
+              },
+            },
+          },
+
+          USA: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "그랜드 캐니언",
+                    Family: "요세미티",
+                    Friends: "옐로스톤",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "지온",
+                    Family: "요세미티",
+                    Friends: "옐로스톤",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "세쿼이아",
+                    Family: "아카디아",
+                    Friends: "데나리",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "그랜드 캐니언",
+                    Family: "요세미티",
+                    Friends: "옐로스톤",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "지온",
+                    Family: "요세미티",
+                    Friends: "옐로스톤",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "세쿼이아",
+                    Family: "아카디아",
+                    Friends: "데나리",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "그랜드 캐니언",
+                    Family: "요세미티",
+                    Friends: "옐로스톤",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "지온",
+                    Family: "요세미티",
+                    Friends: "옐로스톤",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "세쿼이아",
+                    Family: "아카디아",
+                    Friends: "데나리",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "하와이",
+                    Family: "플로리다",
+                    Friends: "샌디에이고",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "마이애미",
+                    Family: "플로리다",
+                    Friends: "샌디에이고",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "말리부",
+                    Family: "코나",
+                    Friends: "푸에르토리코",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "하와이",
+                    Family: "플로리다",
+                    Friends: "샌디에이고",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "마이애미",
+                    Family: "플로리다",
+                    Friends: "샌디에이고",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "말리부",
+                    Family: "코나",
+                    Friends: "푸에르토리코",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "하와이",
+                    Family: "플로리다",
+                    Friends: "샌디에이고",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "마이애미",
+                    Family: "플로리다",
+                    Friends: "샌디에이고",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "말리부",
+                    Family: "코나",
+                    Friends: "푸에르토리코",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "뉴욕",
+                    Family: "워싱턴DC",
+                    Friends: "보스턴",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "시카고",
+                    Family: "뉴올리언스",
+                    Friends: "샌프란시스코",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "로스앤젤레스",
+                    Family: "시애틀",
+                    Friends: "포틀랜드",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "뉴욕",
+                    Family: "워싱턴DC",
+                    Friends: "보스턴",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "시카고",
+                    Family: "뉴올리언스",
+                    Friends: "샌프란시스코",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "로스앤젤레스",
+                    Family: "시애틀",
+                    Friends: "포틀랜드",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "뉴욕",
+                    Family: "워싱턴DC",
+                    Friends: "보스턴",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "시카고",
+                    Family: "뉴올리언스",
+                    Friends: "샌프란시스코",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "로스앤젤레스",
+                    Family: "시애틀",
+                    Friends: "포틀랜드",
+                  },
+                },
+              },
+            },
+          },
+
+          Canada: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "밴프",
+                    Family: "재스퍼",
+                    Friends: "휘슬러",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "가스페",
+                    Family: "마운트로얄",
+                    Friends: "밴프",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "유콘",
+                    Family: "노스웨스트",
+                    Friends: "밴프",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "밴프",
+                    Family: "재스퍼",
+                    Friends: "휘슬러",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "가스페",
+                    Family: "마운트로얄",
+                    Friends: "밴프",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "유콘",
+                    Family: "노스웨스트",
+                    Friends: "밴프",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "밴프",
+                    Family: "재스퍼",
+                    Friends: "휘슬러",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "가스페",
+                    Family: "마운트로얄",
+                    Friends: "밴프",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "유콘",
+                    Family: "노스웨스트",
+                    Friends: "밴프",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "나이아가라",
+                    Family: "몬트리올",
+                    Friends: "토론토",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "빅토리아",
+                    Family: "퀘벡",
+                    Friends: "밴쿠버",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "오타와",
+                    Family: "할리팩스",
+                    Friends: "위니펙",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "나이아가라",
+                    Family: "몬트리올",
+                    Friends: "토론토",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "빅토리아",
+                    Family: "퀘벡",
+                    Friends: "밴쿠버",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "오타와",
+                    Family: "할리팩스",
+                    Friends: "위니펙",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "나이아가라",
+                    Family: "몬트리올",
+                    Friends: "토론토",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "빅토리아",
+                    Family: "퀘벡",
+                    Friends: "밴쿠버",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "오타와",
+                    Family: "할리팩스",
+                    Friends: "위니펙",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "퀘벡",
+                    Family: "몬트리올",
+                    Friends: "오타와",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "토론토",
+                    Family: "밴쿠버",
+                    Friends: "퀘벡",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "몬트리올",
+                    Family: "오타와",
+                    Friends: "토론토",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "퀘벡",
+                    Family: "몬트리올",
+                    Friends: "오타와",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "토론토",
+                    Family: "밴쿠버",
+                    Friends: "퀘벡",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "몬트리올",
+                    Family: "오타와",
+                    Friends: "토론토",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "퀘벡",
+                    Family: "몬트리올",
+                    Friends: "오타와",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "토론토",
+                    Family: "밴쿠버",
+                    Friends: "퀘벡",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "몬트리올",
+                    Family: "오타와",
+                    Friends: "토론토",
+                  },
+                },
+              },
+            },
+          },
+
+          Mexico: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "치첸이트사",
+                    Family: "팔렌케",
+                    Friends: "테오티우아칸",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "우수말",
+                    Family: "팔렌케",
+                    Friends: "테오티우아칸",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "카사스그란데스",
+                    Family: "팔렌케",
+                    Friends: "테오티우아칸",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "치첸이트사",
+                    Family: "팔렌케",
+                    Friends: "테오티우아칸",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "우수말",
+                    Family: "팔렌케",
+                    Friends: "테오티우아칸",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "카사스그란데스",
+                    Family: "팔렌케",
+                    Friends: "테오티우아칸",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "치첸이트사",
+                    Family: "팔렌케",
+                    Friends: "테오티우아칸",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "우수말",
+                    Family: "팔렌케",
+                    Friends: "테오티우아칸",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "카사스그란데스",
+                    Family: "팔렌케",
+                    Friends: "테오티우아칸",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "칸쿤",
+                    Family: "푸에르토바야르타",
+                    Friends: "플라야델카르멘",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "툴룸",
+                    Family: "푸에르토바야르타",
+                    Friends: "플라야델카르멘",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "카보산루카스",
+                    Family: "푸에르토바야르타",
+                    Friends: "플라야델카르멘",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "칸쿤",
+                    Family: "푸에르토바야르타",
+                    Friends: "플라야델카르멘",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "툴룸",
+                    Family: "푸에르토바야르타",
+                    Friends: "플라야델카르멘",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "카보산루카스",
+                    Family: "푸에르토바야르타",
+                    Friends: "플라야델카르멘",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "칸쿤",
+                    Family: "푸에르토바야르타",
+                    Friends: "플라야델카르멘",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "툴룸",
+                    Family: "푸에르토바야르타",
+                    Friends: "플라야델카르멘",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "카보산루카스",
+                    Family: "푸에르토바야르타",
+                    Friends: "플라야델카르멘",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "멕시코시티",
+                    Family: "오악사카",
+                    Friends: "과나후아토",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "푸에블라",
+                    Family: "오악사카",
+                    Friends: "과나후아토",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "산미겔데아옌데",
+                    Family: "오악사카",
+                    Friends: "과나후아토",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "멕시코시티",
+                    Family: "오악사카",
+                    Friends: "과나후아토",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "푸에블라",
+                    Family: "오악사카",
+                    Friends: "과나후아토",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "산미겔데아옌데",
+                    Family: "오악사카",
+                    Friends: "과나후아토",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "멕시코시티",
+                    Family: "오악사카",
+                    Friends: "과나후아토",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "푸에블라",
+                    Family: "오악사카",
+                    Friends: "과나후아토",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "산미겔데아옌데",
+                    Family: "오악사카",
+                    Friends: "과나후아토",
+                  },
+                },
+              },
+            },
+          },
+
+          Brazil: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "아마존",
+                    Family: "이구아수",
+                    Friends: "샤파다",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "마나우스",
+                    Family: "이구아수",
+                    Friends: "샤파다",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "벨렝",
+                    Family: "이구아수",
+                    Friends: "샤파다",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "아마존",
+                    Family: "이구아수",
+                    Friends: "샤파다",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "마나우스",
+                    Family: "이구아수",
+                    Friends: "샤파다",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "벨렝",
+                    Family: "이구아수",
+                    Friends: "샤파다",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "아마존",
+                    Family: "이구아수",
+                    Friends: "샤파다",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "마나우스",
+                    Family: "이구아수",
+                    Friends: "샤파다",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "벨렝",
+                    Family: "이구아수",
+                    Friends: "샤파다",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "리우",
+                    Family: "플로리파",
+                    Friends: "바이아",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "상파울루",
+                    Family: "플로리파",
+                    Friends: "바이아",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "포르투세구로",
+                    Family: "플로리파",
+                    Friends: "바이아",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "리우",
+                    Family: "플로리파",
+                    Friends: "바이아",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "상파울루",
+                    Family: "플로리파",
+                    Friends: "바이아",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "포르투세구로",
+                    Family: "플로리파",
+                    Friends: "바이아",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "리우",
+                    Family: "플로리파",
+                    Friends: "바이아",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "상파울루",
+                    Family: "플로리파",
+                    Friends: "바이아",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "포르투세구로",
+                    Family: "플로리파",
+                    Friends: "바이아",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "리우데자네이루",
+                    Family: "브라질리아",
+                    Friends: "사우바도르",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "포르토 알레그레",
+                    Family: "꾸리찌바",
+                    Friends: "브라질리아",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "헤시피",
+                    Family: "포르탈레자",
+                    Friends: "벨렝",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "리우데자네이루",
+                    Family: "브라질리아",
+                    Friends: "사우바도르",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "포르토 알레그레",
+                    Family: "꾸리찌바",
+                    Friends: "브라질리아",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "헤시피",
+                    Family: "포르탈레자",
+                    Friends: "벨렝",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "리우데자네이루",
+                    Family: "브라질리아",
+                    Friends: "사우바도르",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "포르토 알레그레",
+                    Family: "꾸리찌바",
+                    Friends: "브라질리아",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "헤시피",
+                    Family: "포르탈레자",
+                    Friends: "벨렝",
+                  },
+                },
+              },
+            },
+          },
+
+          Argentina: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "바릴로체",
+                    Family: "우수아이아",
+                    Friends: "엘찰텐",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "푸에르토 마드린",
+                    Family: "산마르틴 데 로스 안데스",
+                    Friends: "엘칼라파테",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "피나마르",
+                    Family: "푸에르토 이과수",
+                    Friends: "카파야테",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "엘볼슨",
+                    Family: "샌카를로스 드 바릴로체",
+                    Friends: "푸에르토 마드린",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "바릴로체",
+                    Family: "엘찰텐",
+                    Friends: "칼라파테",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "카파야테",
+                    Family: "피나마르",
+                    Friends: "푸에르토 이과수",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "산티아고 델 에스테로",
+                    Family: "바릴로체",
+                    Friends: "푸에르토 마드린",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "피나마르",
+                    Family: "엘찰텐",
+                    Friends: "칼라파테",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "카파야테",
+                    Family: "바릴로체",
+                    Friends: "푸에르토 마드린",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "마르델플라타",
+                    Family: "카라로스파즈",
+                    Friends: "비야헤셀",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "산라파엘",
+                    Family: "산타로사",
+                    Friends: "비야 라 앙고스투라",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "타그아구아",
+                    Family: "카를로스 파스",
+                    Friends: "비야헤셀",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "마르델플라타",
+                    Family: "산타로사",
+                    Friends: "바릴로체",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "라 플라타",
+                    Family: "칼라팡가",
+                    Friends: "비야 라 앙고스투라",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "산 라파엘",
+                    Family: "피나마르",
+                    Friends: "비야헤셀",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "마르델플라타",
+                    Family: "산타로사",
+                    Friends: "비야 라 앙고스투라",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "산 라파엘",
+                    Family: "칼라팡가",
+                    Friends: "피나마르",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "라 플라타",
+                    Family: "비야헤셀",
+                    Friends: "바릴로체",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "부에노스아이레스",
+                    Family: "코르도바",
+                    Friends: "멘도사",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "살타",
+                    Family: "코리엔테스",
+                    Friends: "멘도사",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "로사리오",
+                    Family: "투쿠만",
+                    Friends: "멘도사",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "부에노스아이레스",
+                    Family: "코리엔테스",
+                    Friends: "멘도사",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "살타",
+                    Family: "투쿠만",
+                    Friends: "멘도사",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "로사리오",
+                    Family: "코르도바",
+                    Friends: "멘도사",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "부에노스아이레스",
+                    Family: "코리엔테스",
+                    Friends: "멘도사",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "살타",
+                    Family: "투쿠만",
+                    Friends: "멘도사",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "로사리오",
+                    Family: "코르도바",
+                    Friends: "멘도사",
+                  },
+                },
+              },
+            },
+          },
+
+          Chile: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "푸콘",
+                    Family: "비야 리카",
+                    Friends: "리냐 레이",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "발디비아",
+                    Family: "칠로에 섬",
+                    Friends: "오소르노",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "토레스 델 파이네",
+                    Family: "산 페드로 데 아타카마",
+                    Friends: "파타고니아",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "코야이케",
+                    Family: "푸에르토 바라스",
+                    Friends: "리오 트랑퀼로",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "안디스 산맥",
+                    Family: "비야 오히긴스",
+                    Friends: "바르디비아",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "아리카",
+                    Family: "칼라마",
+                    Friends: "카레테라 아우스트랄",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "푸마린",
+                    Family: "푸에르토 나탈레스",
+                    Friends: "푸에르토 바리오스",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "칼라마",
+                    Family: "푸마린",
+                    Friends: "푸에르토 바리오스",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "산 페드로 데 아타카마",
+                    Family: "파타고니아",
+                    Friends: "토레스 델 파이네",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "발파라이소",
+                    Family: "비냐 델 마르",
+                    Friends: "라 세레나",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "콘셉시온",
+                    Family: "안토파가스타",
+                    Friends: "이키케",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "푸에르토 몬트",
+                    Family: "코피아포",
+                    Friends: "라세레나",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "라세레나",
+                    Family: "아리카",
+                    Friends: "비냐 델 마르",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "푸에르토 몬트",
+                    Family: "콘셉시온",
+                    Friends: "안토파가스타",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "이키케",
+                    Family: "라세레나",
+                    Friends: "비냐 델 마르",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "산 페드로 데 아타카마",
+                    Family: "샌티아고",
+                    Friends: "발파라이소",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "비냐 델 마르",
+                    Family: "콘셉시온",
+                    Friends: "안토파가스타",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "이키케",
+                    Family: "라세레나",
+                    Friends: "비냐 델 마르",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "산티아고",
+                    Family: "발파라이소",
+                    Friends: "라세레나",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "안토파가스타",
+                    Family: "콘셉시온",
+                    Friends: "아리카",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "푸에르토 몬트",
+                    Family: "발디비아",
+                    Friends: "푸콘",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "발파라이소",
+                    Family: "비냐 델 마르",
+                    Friends: "라세레나",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "안토파가스타",
+                    Family: "콘셉시온",
+                    Friends: "아리카",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "푸에르토 몬트",
+                    Family: "발디비아",
+                    Friends: "푸콘",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "산티아고",
+                    Family: "발파라이소",
+                    Friends: "라세레나",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "안토파가스타",
+                    Family: "콘셉시온",
+                    Friends: "아리카",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "푸에르토 몬트",
+                    Family: "발디비아",
+                    Friends: "푸콘",
+                  },
+                },
+              },
+            },
+          },
+
+          Egypt: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "와디 엘 히탄",
+                    Family: "화이트 데저트",
+                    Friends: "블랙 데저트",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "시에와 오아시스",
+                    Family: "파라프라 오아시스",
+                    Friends: "다하브",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "아스완",
+                    Family: "아부 심벨",
+                    Friends: "누비아",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "세인트 캐서린",
+                    Family: "시에와 오아시스",
+                    Friends: "블랙 데저트",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "다하브",
+                    Family: "나일강 크루즈",
+                    Friends: "누비아",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "시에와 오아시스",
+                    Family: "파라프라 오아시스",
+                    Friends: "화이트 데저트",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "다하브",
+                    Family: "세인트 캐서린",
+                    Friends: "블랙 데저트",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "화이트 데저트",
+                    Family: "시에와 오아시스",
+                    Friends: "블랙 데저트",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "아스완",
+                    Family: "아부 심벨",
+                    Friends: "누비아",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "홍해 해변",
+                    Family: "샤름 엘 셰이크",
+                    Friends: "후르가다",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "다하브",
+                    Family: "엘구나",
+                    Friends: "마르사 알람",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "샤름 엘 셰이크",
+                    Family: "후르가다",
+                    Friends: "엘구나",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "다하브",
+                    Family: "마르사 알람",
+                    Friends: "후르가다",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "엘구나",
+                    Family: "샤름 엘 셰이크",
+                    Friends: "다하브",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "마르사 알람",
+                    Family: "엘구나",
+                    Friends: "후르가다",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "다하브",
+                    Family: "마르사 알람",
+                    Friends: "후르가다",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "샤름 엘 셰이크",
+                    Family: "엘구나",
+                    Friends: "다하브",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "마르사 알람",
+                    Family: "엘구나",
+                    Friends: "후르가다",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "카이로",
+                    Family: "기자",
+                    Friends: "룩소르",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "알렉산드리아",
+                    Family: "아스완",
+                    Friends: "룩소르",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "카르낙",
+                    Family: "아부 심벨",
+                    Friends: "누비아",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "카이로",
+                    Family: "기자",
+                    Friends: "룩소르",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "알렉산드리아",
+                    Family: "아스완",
+                    Friends: "룩소르",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "카르낙",
+                    Family: "아부 심벨",
+                    Friends: "누비아",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "카이로",
+                    Family: "기자",
+                    Friends: "룩소르",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "알렉산드리아",
+                    Family: "아스완",
+                    Friends: "룩소르",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "카르낙",
+                    Family: "아부 심벨",
+                    Friends: "누비아",
+                  },
+                },
+              },
+            },
+          },
+          SouthAfrica: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "크루거 국립공원 솔로 탐험",
+                    Family: "가든 루트 국립공원 가족 탐험",
+                    Friends: "케이프타운 테이블 마운틴 친구들과 탐험",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "필그림스 레스트",
+                    Family: "드라켄스버그 산맥",
+                    Friends: "케이프타운 테이블 마운틴 친구들과 탐험",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "크루거 국립공원",
+                    Family: "가든 루트",
+                    Friends: "와일드 코스트 친구들과 탐험",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "크루거 국립공원 솔로 탐험",
+                    Family: "드라켄스버그 산맥 가족 탐험",
+                    Friends: "가든 루트 친구들과 탐험",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "필그림스 레스트",
+                    Family: "크누아 크누아미",
+                    Friends: "크루거 국립공원",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "케이프타운 테이블 마운틴",
+                    Family: "가든 루트",
+                    Friends: "와일드 코스트 친구들과 탐험",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "필그림스 레스트",
+                    Family: "드라켄스버그 산맥 가족 탐험",
+                    Friends: "크누아 크누아미 친구들과 탐험",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "크루거 국립공원 솔로 탐험",
+                    Family: "가든 루트 가족 탐험",
+                    Friends: "와일드 코스트 친구들과 탐험",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "케이프타운 테이블 마운틴",
+                    Family: "크루거 국립공원",
+                    Friends: "드라켄스버그 산맥",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "케이프타운 해변",
+                    Family: "더반 해변",
+                    Friends: "나이스나 해변",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "더반",
+                    Family: "케이프타운",
+                    Friends: "나이스나",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "포트 엘리자베스",
+                    Family: "케이프타운",
+                    Friends: "더반",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "케이프타운 해변",
+                    Family: "나이스나 해변",
+                    Friends: "더반 해변",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "나이스나",
+                    Family: "케이프타운",
+                    Friends: "더반",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "포트 엘리자베스",
+                    Family: "나이스나",
+                    Friends: "더반",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "케이프타운 해변",
+                    Family: "더반 해변",
+                    Friends: "나이스나 해변",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "나이스나",
+                    Family: "케이프타운",
+                    Friends: "더반",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "포트 엘리자베스",
+                    Family: "나이스나",
+                    Friends: "더반",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "요하네스버그 역사 탐방",
+                    Family: "케이프타운 역사 탐방",
+                    Friends: "프리토리아 역사 탐방",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "더반 역사 탐방",
+                    Family: "포트 엘리자베스 역사 탐방",
+                    Friends: "블룸폰테인 역사 탐방",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "케이프타운 역사 탐방",
+                    Family: "요하네스버그 역사 탐방",
+                    Friends: "프리토리아 역사 탐방",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "더반 역사 탐방",
+                    Family: "포트 엘리자베스 역사 탐방",
+                    Friends: "블룸폰테인 역사 탐방",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "케이프타운 역사 탐방",
+                    Family: "요하네스버그 역사 탐방",
+                    Friends: "프리토리아 역사 탐방",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "더반 역사 탐방",
+                    Family: "포트 엘리자베스 역사 탐방",
+                    Friends: "블룸폰테인 역사 탐방",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "요하네스버그 역사 탐방",
+                    Family: "케이프타운 역사 탐방",
+                    Friends: "프리토리아 역사 탐방",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "더반 역사 탐방",
+                    Family: "포트 엘리자베스 역사 탐방",
+                    Friends: "블룸폰테인 역사 탐방",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "케이프타운 역사 탐방",
+                    Family: "요하네스버그 역사 탐방",
+                    Friends: "프리토리아 역사 탐방",
+                  },
+                },
+              },
+            },
+          },
+
+          Kenya: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "마사이 마라 국립공원",
+                    Family: "암보셀리 국립공원",
+                    Friends: "헬스 게이트 국립공원",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "암보셀리 국립공원",
+                    Family: "사보 이스트 국립공원",
+                    Friends: "헬스 게이트 국립공원",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "사보 이스트 국립공원",
+                    Family: "마운트 케냐 국립공원",
+                    Friends: "마사이 마라 국립공원",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "헬스 게이트 국립공원",
+                    Family: "사보 웨스트 국립공원",
+                    Friends: "나쿠루 호수 국립공원",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "사보 이스트 국립공원",
+                    Family: "암보셀리 국립공원",
+                    Friends: "마운트 케냐 국립공원",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "마운트 케냐 국립공원",
+                    Family: "나이로비 국립공원",
+                    Friends: "사보 웨스트 국립공원",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "마운트 케냐 국립공원",
+                    Family: "암보셀리 국립공원",
+                    Friends: "나이로비 국립공원",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "마사이 마라 국립공원",
+                    Family: "사보 웨스트 국립공원",
+                    Friends: "사보 이스트 국립공원",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "마운트 케냐 국립공원",
+                    Family: "사보 웨스트 국립공원",
+                    Friends: "암보셀리 국립공원",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "말린디 해변",
+                    Family: "디아니 해변",
+                    Friends: "왓무 해변",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "왓무 해변",
+                    Family: "말린디 해변",
+                    Friends: "디아니 해변",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "디아니 해변",
+                    Family: "왓무 해변",
+                    Friends: "말린디 해변",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "왓무 해변",
+                    Family: "말린디 해변",
+                    Friends: "디아니 해변",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "디아니 해변",
+                    Family: "왓무 해변",
+                    Friends: "말린디 해변",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "말린디 해변",
+                    Family: "디아니 해변",
+                    Friends: "왓무 해변",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "디아니 해변",
+                    Family: "왓무 해변",
+                    Friends: "말린디 해변",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "말린디 해변",
+                    Family: "디아니 해변",
+                    Friends: "왓무 해변",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "왓무 해변",
+                    Family: "말린디 해변",
+                    Friends: "디아니 해변",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "나이로비 국립 박물관",
+                    Family: "카렌 블릭센 박물관",
+                    Friends: "기라프 센터",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "카렌 블릭센 박물관",
+                    Family: "기라프 센터",
+                    Friends: "포트 지저스",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "기라프 센터",
+                    Family: "포트 지저스",
+                    Friends: "나이로비 국립 박물관",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "포트 지저스",
+                    Family: "나이로비 국립 박물관",
+                    Friends: "카렌 블릭센 박물관",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "기라프 센터",
+                    Family: "포트 지저스",
+                    Friends: "카렌 블릭센 박물관",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "나이로비 국립 박물관",
+                    Family: "카렌 블릭센 박물관",
+                    Friends: "기라프 센터",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "포트 지저스",
+                    Family: "나이로비 국립 박물관",
+                    Friends: "카렌 블릭센 박물관",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "기라프 센터",
+                    Family: "포트 지저스",
+                    Friends: "카렌 블릭센 박물관",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "나이로비 국립 박물관",
+                    Family: "카렌 블릭센 박물관",
+                    Friends: "기라프 센터",
+                  },
+                },
+              },
+            },
+          },
+          Australia: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "그레이트 배리어 리프 솔로 탐험",
+                    Family: "다윈 솔로 탐험",
+                    Friends: "퍼스 솔로 탐험",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "다윈 솔로 탐험",
+                    Family: "울룰루 솔로 탐험",
+                    Friends: "타즈매니아 솔로 탐험",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "울룰루 솔로 탐험",
+                    Family: "타즈매니아 솔로 탐험",
+                    Friends: "다윈 솔로 탐험",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "울룰루 솔로 탐험",
+                    Family: "타즈매니아 솔로 탐험",
+                    Friends: "다윈 솔로 탐험",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "타즈매니아 솔로 탐험",
+                    Family: "다윈 솔로 탐험",
+                    Friends: "울룰루 솔로 탐험",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "다윈 솔로 탐험",
+                    Family: "울룰루 솔로 탐험",
+                    Friends: "타즈매니아 솔로 탐험",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "타즈매니아 솔로 탐험",
+                    Family: "다윈 솔로 탐험",
+                    Friends: "울룰루 솔로 탐험",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "다윈 솔로 탐험",
+                    Family: "울룰루 솔로 탐험",
+                    Friends: "타즈매니아 솔로 탐험",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "울룰루 솔로 탐험",
+                    Family: "타즈매니아 솔로 탐험",
+                    Friends: "다윈 솔로 탐험",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "골드 코스트 해변",
+                    Family: "본다이 해변",
+                    Friends: "노사 해변",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "본다이 해변",
+                    Family: "노사 해변",
+                    Friends: "선샤인 해변",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "노사 해변",
+                    Family: "선샤인 해변",
+                    Friends: "바이런 베이",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "노사 해변",
+                    Family: "선샤인 해변",
+                    Friends: "바이런 베이",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "선샤인 해변",
+                    Family: "바이런 베이",
+                    Friends: "골드 코스트 해변",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "바이런 베이",
+                    Family: "골드 코스트 해변",
+                    Friends: "본다이 해변",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "선샤인 해변",
+                    Family: "바이런 베이",
+                    Friends: "골드 코스트 해변",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "바이런 베이",
+                    Family: "골드 코스트 해변",
+                    Friends: "본다이 해변",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "골드 코스트 해변",
+                    Family: "본다이 해변",
+                    Friends: "노사 해변",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "시드니 오페라 하우스",
+                    Family: "멜버른 박물관",
+                    Friends: "브리즈번 현대 미술관",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "멜버른 박물관",
+                    Family: "브리즈번 현대 미술관",
+                    Friends: "애들레이드 예술관",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "브리즈번 현대 미술관",
+                    Family: "애들레이드 예술관",
+                    Friends: "퍼스 문화센터",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "멜버른 박물관",
+                    Family: "브리즈번 현대 미술관",
+                    Friends: "애들레이드 예술관",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "브리즈번 현대 미술관",
+                    Family: "애들레이드 예술관",
+                    Friends: "퍼스 문화센터",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "애들레이드 예술관",
+                    Family: "퍼스 문화센터",
+                    Friends: "호바트 타즈매니아 박물관",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "브리즈번 현대 미술관",
+                    Family: "애들레이드 예술관",
+                    Friends: "퍼스 문화센터",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "애들레이드 예술관",
+                    Family: "퍼스 문화센터",
+                    Friends: "호바트 타즈매니아 박물관",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "퍼스 문화센터",
+                    Family: "호바트 타즈매니아 박물관",
+                    Friends: "멜버른 박물관",
+                  },
+                },
+              },
+            },
+          },
+          NewZealand: {
+            Adventure: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "밀포드 사운드",
+                    Family: "와이토모 동굴",
+                    Friends: "통가리로 국립공원",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "아벨 타즈만 국립공원",
+                    Family: "와이토모 동굴",
+                    Friends: "통가리로 국립공원",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "아오라키/마운트 쿡 국립공원",
+                    Family: "피오르드랜드 국립공원",
+                    Friends: "와이토모 동굴",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "아오라키/마운트 쿡 국립공원",
+                    Family: "아벨 타즈만 국립공원",
+                    Friends: "통가리로 국립공원",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "아오라키/마운트 쿡 국립공원",
+                    Family: "피오르드랜드 국립공원",
+                    Friends: "통가리로 국립공원",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "피오르드랜드 국립공원",
+                    Family: "와이토모 동굴",
+                    Friends: "아벨 타즈만 국립공원",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "피오르드랜드 국립공원",
+                    Family: "통가리로 국립공원",
+                    Friends: "와이토모 동굴",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "아벨 타즈만 국립공원",
+                    Family: "아오라키/마운트 쿡 국립공원",
+                    Friends: "피오르드랜드 국립공원",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "아오라키/마운트 쿡 국립공원",
+                    Family: "와이토모 동굴",
+                    Friends: "통가리로 국립공원",
+                  },
+                },
+              },
+            },
+            Relaxation: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "퀸즈타운 해변",
+                    Family: "레이크 타우포",
+                    Friends: "마운트 망가누이",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "레이크 타우포",
+                    Family: "마운트 망가누이",
+                    Friends: "퀸즈타운 해변",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "마운트 망가누이",
+                    Family: "퀸즈타운 해변",
+                    Friends: "레이크 타우포",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "레이크 타우포",
+                    Family: "퀸즈타운 해변",
+                    Friends: "마운트 망가누이",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "마운트 망가누이",
+                    Family: "레이크 타우포",
+                    Friends: "퀸즈타운 해변",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "퀸즈타운 해변",
+                    Family: "레이크 타우포",
+                    Friends: "마운트 망가누이",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "마운트 망가누이",
+                    Family: "레이크 타우포",
+                    Friends: "퀸즈타운 해변",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "퀸즈타운 해변",
+                    Family: "마운트 망가누이",
+                    Friends: "레이크 타우포",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "레이크 타우포",
+                    Family: "퀸즈타운 해변",
+                    Friends: "마운트 망가누이",
+                  },
+                },
+              },
+            },
+            Cultural: {
+              Low: {
+                Short: {
+                  Hotel: {
+                    Alone: "로토루아의 마오리 문화 탐방",
+                    Family: "웰링턴의 테 파파 국립 박물관",
+                    Friends: "오클랜드 전쟁 기념 박물관",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "웰링턴의 테 파파 국립 박물관",
+                    Family: "오클랜드 전쟁 기념 박물관",
+                    Friends: "크라이스트처치 예술관",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "오클랜드 전쟁 기념 박물관",
+                    Family: "크라이스트처치 예술관",
+                    Friends: "던디딘의 오타고 박물관",
+                  },
+                },
+              },
+              Medium: {
+                Short: {
+                  Hotel: {
+                    Alone: "웰링턴의 테 파파 국립 박물관",
+                    Family: "오클랜드 전쟁 기념 박물관",
+                    Friends: "크라이스트처치 예술관",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "오클랜드 전쟁 기념 박물관",
+                    Family: "크라이스트처치 예술관",
+                    Friends: "던디딘의 오타고 박물관",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "크라이스트처치 예술관",
+                    Family: "던디딘의 오타고 박물관",
+                    Friends: "로토루아의 마오리 문화 탐방",
+                  },
+                },
+              },
+              High: {
+                Short: {
+                  Hotel: {
+                    Alone: "오클랜드 전쟁 기념 박물관",
+                    Family: "크라이스트처치 예술관",
+                    Friends: "던디딘의 오타고 박물관",
+                  },
+                },
+                Medium: {
+                  Hotel: {
+                    Alone: "크라이스트처치 예술관",
+                    Family: "던디딘의 오타고 박물관",
+                    Friends: "로토루아의 마오리 문화 탐방",
+                  },
+                },
+                Long: {
+                  Hotel: {
+                    Alone: "던디딘의 오타고 박물관",
+                    Family: "로토루아의 마오리 문화 탐방",
+                    Friends: "웰링턴의 테 파파 국립 박물관",
+                  },
+                },
+              },
+            },
+          },
+        };
+
+        recommendationsDiv.innerHTML = "";
+        if (
+          travelType &&
+          selectedCountry &&
+          budget &&
+          travelTime &&
+          accommodation &&
+          travelCompanion
+        ) {
+          let recommendation =
+            recommendations[selectedCountry][travelType][budget][travelTime][
+              accommodation
+            ][travelCompanion];
+          let recommendationsHTML = `<h2>추천 여행지:</h2><ul>`;
+          recommendationsHTML += `<li>${recommendation}</li>`;
+          recommendationsHTML += `</ul>`;
+          recommendationsDiv.innerHTML = recommendationsHTML;
+          recommendationsDiv.style.display = "block";
+          window.scrollTo(0, recommendationsDiv.offsetTop);
+        } else {
+          alert("설문을 완료해주세요.");
+        }
+      }
+    </script>
+  </body>
+</html>
