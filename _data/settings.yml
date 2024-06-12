@@ -14,7 +14,7 @@ menu:
 
 projects:
   - { name: "사이트 소개", url: "proj-1" }
-  - { name: "내 포트폴리오", url: "proj-2" }
+  - { name: "재작자 포트폴리오", url: "proj-2" }
   - { name: "인사말", url: "proj-3" }
 
 #-------------------------------

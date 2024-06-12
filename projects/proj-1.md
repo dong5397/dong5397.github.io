@@ -128,15 +128,20 @@ title: "Project One"
   </div>
 </section>
 <!-- Navigation Section -->
-<nav>
-  <div>
-    
-   <a href="{{ site.baseurl }}/survey">여행지 알아보기</a>
+<nav style="text-align: center; margin-top: 30px;">
+  <div style="display: inline-block; padding: 10px 20px; background-color: #9b59b6; border-radius: 25px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;">
+    <a href="{{ site.baseurl }}/survey" style="text-decoration: none; color: #fff; font-size: 20px; font-family: 'Arial', sans-serif; transition: color 0.3s ease;">여행지 알아보기</a>
   </div>
 </nav>
 
 <style>
-div{
-  font-size:18px
-}
+  nav div:hover {
+    background-color: #8e44ad;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  nav div a:hover {
+    color: #e0e0e0;
+  }
 </style>
