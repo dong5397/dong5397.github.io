@@ -277,62 +277,6 @@
   </nav>
 </header>
  <style>
-  .form-container {
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    max-width: 600px;
-    background-color: #f9f9f9;
-  }
-
-  .form-container h2 {
-    text-align: center;
-  }
-
-  .form-container input,
-  .form-container textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .form-container button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .form-container button:hover {
-    background-color: #45a049;
-  }
-</style>
-
-<section>
-  <div class="form-container">
-    <h2>새 글 작성하기</h2>
-    <form id="blog-post-form">
-      <input type="text" id="title" name="title" placeholder="Title" required />
-      <textarea
-        id="content"
-        name="content"
-        rows="10"
-        placeholder="Content"
-        required
-      ></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-
-  <div class="post-container">
-    <h4 class="project-title"></h4>
-    <div class="project-load"><style>
   body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -477,40 +421,6 @@
     &copy; 2024 해외여행 추천 사이트
   </div>
 </div>
-</div>
-  </div>
-  
-</section>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-  $(document).ready(function () {
-    // 새로운 블로그 포스트 작성 폼 제출 처리
-    $("#blog-post-form").submit(function (event) {
-      event.preventDefault();
-      const postData = {
-        title: $("#title").val(),
-        content: $("#content").val(),
-      };
-
-      $.ajax({
-        url: "https://tododebackend.fly.dev/api/v1/posts",
-        method: "POST",
-        contentType: "application/json",
-        data: JSON.stringify(postData),
-        success: function (data) {
-          alert("Post created successfully!");
-          // 폼 초기화
-          $("#blog-post-form")[0].reset();
-        },
-        error: function (err) {
-          console.error("Error creating post:", err);
-          alert("Failed to create post.");
-        },
-      });
-    });
-  });
-</script>
  <footer>
   <div class="footer-wrap">
     <div class="footer-tagline">
