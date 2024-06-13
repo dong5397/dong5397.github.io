@@ -112,35 +112,15 @@
         font-weight: bold;
       }
 
-      .hero {
-        background: url("/assets/img/hero.jpg") no-repeat
-          center center/cover;
-        padding: 100px 20px;
-        text-align: center;
-        color: #fff;
-        width: 100%;
-        border-radius: 10px;
-      }
-
-      .hero-content h1 {
-        font-size: 3em;
-        margin: 0;
-      }
-
-      .hero-content p {
-        font-size: 1.5em;
-        margin: 10px 0 0;
-      }
-
       .projects-section {
         padding: 20px;
       }
 
       .projects-container {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         gap: 20px;
-        justify-content: center;
       }
 
       .project-link {
@@ -150,10 +130,10 @@
       .project-unit {
         background-size: cover;
         background-position: center;
-        width: 300px;
+        width: 800px;
         height: 400px;
         position: relative;
-        overflow: hidden;
+
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s, box-shadow 0.3s;
@@ -203,28 +183,6 @@
         color: #fff;
       }
 
-      .blog-container {
-        width: 100%;
-        padding: 20px;
-      }
-
-      .blog-unit {
-        background: #fff;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      .blog-unit h1 {
-        margin: 0 0 10px;
-      }
-
-      .blog-unit .blog-date {
-        font-size: 0.9em;
-        color: #999;
-      }
-
       .form-container {
         background: #fff;
         padding: 20px;
@@ -264,8 +222,7 @@
     </style>
   </head>
   <body>
-    <div class="site-container">
-      <header>
+    <div class="site-container"><header>
   <div class="logo">
     <a href="/">해외여행지 추천</a>
   </div>
@@ -294,6 +251,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     animation: fadeIn 1s ease-in-out;
+    
   }
 
   @keyframes fadeIn {
@@ -375,7 +333,9 @@
     text-decoration: none;
     transition: color 0.3s;
   }
-
+ .center-text {
+      text-align: center;
+    }
   .contact-info a:hover {
     color: #ffd700; /* 금색 */
     text-decoration: underline;
@@ -391,7 +351,7 @@
 
 <div class="container">
   <h1>인사말</h1>
-  <p>안녕하세요! 저희 웹사이트를 방문해 주셔서 감사합니다. 저희는 최고의 서비스를 제공하기 위해 항상 노력하고 있습니다. 언제든지 문의 사항이나 도움이 필요하시면 연락 주시기 바랍니다.</p>
+  <p class="center-text">안녕하세요! 저희 웹사이트를 방문해 주셔서 감사합니다. </p><p class="center-text">저희는 최고의 서비스를 제공하기 위해 항상 노력하고 있습니다.</p> <p class="center-text">언제든지 문의 사항이나 도움이 필요하시면 연락 주시기 바랍니다.</p>
 
   <h2>대학생활</h2>
   <ul>
@@ -415,31 +375,12 @@
     <p><strong>이메일</strong>: <a href="mailto:ehddnr5397@naver.com">ehddnr5397@naver.com</a></p>
   </div>
 
-  <p>저희와 함께 더 나은 미래를 만들어 갑시다. 언제든지 연락 주시면 친절히 응대하겠습니다.</p>
-
   <div class="footer">
     &copy; 2024 해외여행 추천 사이트
   </div>
 </div>
- <footer>
-  <div class="footer-wrap">
-    <div class="footer-tagline">
-      <p>© 2024 해외여행 추천 사이트</p>
-    </div>
-    <div class="social-media">
-      <nav>
-        <a href="https://github.com/dong5397" target="_blank"
-          ><i class="fa fa-github" aria-hidden="true"></i
-        ></a>
-        <a href="mailto:ehddnr5397@naver.com" target="_blank"
-          ><i class="fa fa-envelope" aria-hidden="true"></i
-        ></a>
-      </nav>
-    </div>
-  </div>
-</footer>
+</div>
 
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </body>
 </html>

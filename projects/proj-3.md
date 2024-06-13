@@ -21,6 +21,7 @@ title: ""
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     animation: fadeIn 1s ease-in-out;
+    
   }
 
   @keyframes fadeIn {
@@ -102,7 +103,9 @@ title: ""
     text-decoration: none;
     transition: color 0.3s;
   }
-
+ .center-text {
+      text-align: center;
+    }
   .contact-info a:hover {
     color: #ffd700; /* 금색 */
     text-decoration: underline;
@@ -118,7 +121,7 @@ title: ""
 
 <div class="container">
   <h1>인사말</h1>
-  <p>안녕하세요! 저희 웹사이트를 방문해 주셔서 감사합니다. 저희는 최고의 서비스를 제공하기 위해 항상 노력하고 있습니다. 언제든지 문의 사항이나 도움이 필요하시면 연락 주시기 바랍니다.</p>
+  <p class="center-text">안녕하세요! 저희 웹사이트를 방문해 주셔서 감사합니다. </P><p class="center-text">저희는 최고의 서비스를 제공하기 위해 항상 노력하고 있습니다.</p> <p class="center-text">언제든지 문의 사항이나 도움이 필요하시면 연락 주시기 바랍니다.</p>
 
   <h2>대학생활</h2>
   <ul>
@@ -142,9 +145,6 @@ title: ""
     <p><strong>이메일</strong>: <a href="mailto:ehddnr5397@naver.com">ehddnr5397@naver.com</a></p>
   </div>
 
-  <p>저희와 함께 더 나은 미래를 만들어 갑시다. 언제든지 연락 주시면 친절히 응대하겠습니다.</p>
-
   <div class="footer">
     &copy; 2024 해외여행 추천 사이트
   </div>
-</div>

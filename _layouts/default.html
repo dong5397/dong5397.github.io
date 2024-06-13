@@ -84,35 +84,15 @@
         font-weight: bold;
       }
 
-      .hero {
-        background: url("{{ site.baseurl }}/assets/img/hero.jpg") no-repeat
-          center center/cover;
-        padding: 100px 20px;
-        text-align: center;
-        color: #fff;
-        width: 100%;
-        border-radius: 10px;
-      }
-
-      .hero-content h1 {
-        font-size: 3em;
-        margin: 0;
-      }
-
-      .hero-content p {
-        font-size: 1.5em;
-        margin: 10px 0 0;
-      }
-
       .projects-section {
         padding: 20px;
       }
 
       .projects-container {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         gap: 20px;
-        justify-content: center;
       }
 
       .project-link {
@@ -122,10 +102,10 @@
       .project-unit {
         background-size: cover;
         background-position: center;
-        width: 300px;
+        width: 800px;
         height: 400px;
         position: relative;
-        overflow: hidden;
+
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s, box-shadow 0.3s;
@@ -175,28 +155,6 @@
         color: #fff;
       }
 
-      .blog-container {
-        width: 100%;
-        padding: 20px;
-      }
-
-      .blog-unit {
-        background: #fff;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      .blog-unit h1 {
-        margin: 0 0 10px;
-      }
-
-      .blog-unit .blog-date {
-        font-size: 0.9em;
-        color: #999;
-      }
-
       .form-container {
         background: #fff;
         padding: 20px;
@@ -236,9 +194,8 @@
     </style>
   </head>
   <body>
-    <div class="site-container">
-      {% include header.html %} {{ content }} {% include footer.html %}
-    </div>
+    <div class="site-container">{% include header.html %} {{ content }}</div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </body>
 </html>

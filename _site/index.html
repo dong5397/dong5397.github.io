@@ -111,35 +111,15 @@
         font-weight: bold;
       }
 
-      .hero {
-        background: url("/assets/img/hero.jpg") no-repeat
-          center center/cover;
-        padding: 100px 20px;
-        text-align: center;
-        color: #fff;
-        width: 100%;
-        border-radius: 10px;
-      }
-
-      .hero-content h1 {
-        font-size: 3em;
-        margin: 0;
-      }
-
-      .hero-content p {
-        font-size: 1.5em;
-        margin: 10px 0 0;
-      }
-
       .projects-section {
         padding: 20px;
       }
 
       .projects-container {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         gap: 20px;
-        justify-content: center;
       }
 
       .project-link {
@@ -149,10 +129,10 @@
       .project-unit {
         background-size: cover;
         background-position: center;
-        width: 300px;
+        width: 800px;
         height: 400px;
         position: relative;
-        overflow: hidden;
+
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s, box-shadow 0.3s;
@@ -202,28 +182,6 @@
         color: #fff;
       }
 
-      .blog-container {
-        width: 100%;
-        padding: 20px;
-      }
-
-      .blog-unit {
-        background: #fff;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      .blog-unit h1 {
-        margin: 0 0 10px;
-      }
-
-      .blog-unit .blog-date {
-        font-size: 0.9em;
-        color: #999;
-      }
-
       .form-container {
         background: #fff;
         padding: 20px;
@@ -263,8 +221,7 @@
     </style>
   </head>
   <body>
-    <div class="site-container">
-      <header>
+    <div class="site-container"><header>
   <div class="logo">
     <a href="/">해외여행지 추천</a>
   </div>
@@ -285,16 +242,18 @@
       <div
         class="project-unit"
         data-folder="/projects/proj-1"
-        style="
-          background-image: url(/assets/img/projects/proj-1/main1.png);
-          background-size: 120%;
-        "
       >
+        <div class="project-image-wrapper">
+          <img
+            src="/assets/img/projects/proj-1/main1.png"
+            alt="사이트 소개"
+          />
+        </div>
         <div class="project-overlay">
-          <strong>
-            사이트 소개
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </strong>
+          <strong
+            >사이트 소개
+            <i class="fa fa-arrow-right" aria-hidden="true"></i
+          ></strong>
         </div>
       </div>
     </a>
@@ -306,16 +265,18 @@
       <div
         class="project-unit"
         data-folder="/projects/proj-2"
-        style="
-          background-image: url(/assets/img/projects/proj-2/main1.png);
-          background-size: 120%;
-        "
       >
+        <div class="project-image-wrapper">
+          <img
+            src="/assets/img/projects/proj-2/main1.png"
+            alt="재작자 포트폴리오"
+          />
+        </div>
         <div class="project-overlay">
-          <strong>
-            재작자 포트폴리오
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </strong>
+          <strong
+            >재작자 포트폴리오
+            <i class="fa fa-arrow-right" aria-hidden="true"></i
+          ></strong>
         </div>
       </div>
     </a>
@@ -327,16 +288,18 @@
       <div
         class="project-unit"
         data-folder="/projects/proj-3"
-        style="
-          background-image: url(/assets/img/projects/proj-3/main1.png);
-          background-size: 170%;
-        "
       >
+        <div class="project-image-wrapper">
+          <img
+            src="/assets/img/projects/proj-3/main1.png"
+            alt="인사말"
+          />
+        </div>
         <div class="project-overlay">
-          <strong>
-            인사말
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </strong>
+          <strong
+            >인사말
+            <i class="fa fa-arrow-right" aria-hidden="true"></i
+          ></strong>
         </div>
       </div>
     </a>
@@ -344,25 +307,99 @@
   </div>
 </section>
 
- <footer>
-  <div class="footer-wrap">
-    <div class="footer-tagline">
-      <p>© 2024 해외여행 추천 사이트</p>
-    </div>
-    <div class="social-media">
-      <nav>
-        <a href="https://github.com/dong5397" target="_blank"
-          ><i class="fa fa-github" aria-hidden="true"></i
-        ></a>
-        <a href="mailto:ehddnr5397@naver.com" target="_blank"
-          ><i class="fa fa-envelope" aria-hidden="true"></i
-        ></a>
-      </nav>
-    </div>
-  </div>
-</footer>
+<style>
+  .projects-section {
+    padding: 20px;
+    background: #eef2f5;
+  }
 
-    </div>
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .project-link {
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .project-unit {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .project-unit:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-image-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+  }
+
+  .project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(100%);
+    border-radius: 0 0 15px 15px;
+  }
+
+  .project-unit:hover .project-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .project-overlay strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+  }
+
+  .project-overlay i {
+    margin-left: 10px;
+    transition: margin-left 0.3s;
+  }
+
+  .project-unit:hover .project-overlay i {
+    margin-left: 20px;
+  }
+</style>
+
+</div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </body>
 </html>
