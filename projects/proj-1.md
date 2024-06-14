@@ -5,7 +5,7 @@ title: "Project One"
 
 <section>
   <div class="post-container">
-    <h4 class="project-title">소개</h4>
+    <h2 class="project-title">소개</h2>
     <div class="project-load">
       <div>
         여행을 계획하고 있지만 어디로 갈지 고민 중이신가요? 저희 사이트는
@@ -144,4 +144,10 @@ title: "Project One"
   nav div a:hover {
     color: #e0e0e0;
   }
+  .jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 </style>

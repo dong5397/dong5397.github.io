@@ -6,7 +6,7 @@ permalink: /blog
 
 <style>
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Dongle", sans-serif;
     color: #333;
     background-color: #f4f4f4;
   }
@@ -43,7 +43,7 @@ permalink: /blog
 
   .blog-date {
     color: #999;
-    font-size: 0.9em;
+    font-size: 30px;
     margin-bottom: 15px;
   }
 

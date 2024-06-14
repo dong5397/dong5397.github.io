@@ -5,7 +5,7 @@ title: ""
 
 <style>
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Dongle", sans-serif;
     line-height: 1.6;
     background-color: #f0f2f5;
     color: #333;
@@ -68,7 +68,7 @@ title: ""
   }
 
   p {
-    text-align: justify;
+    text-align: center;
     margin-bottom: 20px;
   }
 
@@ -128,8 +128,8 @@ title: ""
     <li><strong>2019년</strong>: 학교 입학</li>
     <li><strong>2020년</strong>: 2학년, 코로나</li>
     <li><strong>2021~22년</strong>: 군대 입대</li>
-    <li><strong>2023년</strong>: 복학</li>
-    <li><strong>2024년</strong>: 4학년 시작</li>
+    <li><strong>2023년</strong>: 복학 및 웹 프론트엔드 교육 참여</li>
+    <li><strong>2024년</strong>: 4학년 시작 및 캡스톤 준비</li>
   </ul>
 
   <h2>조직도</h2>
@@ -140,11 +140,12 @@ title: ""
 
   <h2>연락처</h2>
   <div class="contact-info">
-  <p><strong>이름</strong>: 김동욱</p>
-    <p><strong>전화번호</strong>: 010-2848-5397</p>
-    <p><strong>이메일</strong>: <a href="mailto:ehddnr5397@naver.com">ehddnr5397@naver.com</a></p>
+  <ul>
+  <li><strong>이름</strong>: 김동욱</li>
+    <li><strong>전화번호</strong>: 010-2848-5397</li>
+    <li><strong>이메일</strong>: <a href="mailto:ehddnr5397@naver.com">ehddnr5397@naver.com</a></li>
+    </ul>
   </div>
 
-  <div class="footer">
-    &copy; 2024 해외여행 추천 사이트
+  
   </div>

@@ -5,7 +5,7 @@ title: ""
 
 <style>
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Dongle", sans-serif;
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
@@ -39,6 +39,7 @@ title: ""
   .projects-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction:row;
     gap: 20px;
     justify-content: center;
   }
@@ -48,7 +49,7 @@ title: ""
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 350px;
+    width:450px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
@@ -124,6 +125,7 @@ title: ""
     left: 0;
     width: 100%;
     height: 100%;
+   
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent 50%);
     border-radius: 15px;
     opacity: 0;
