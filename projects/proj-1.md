@@ -113,20 +113,20 @@ title: "Project One"
       <div class="image-container">
         <img
           src="{{ site.baseurl }}/assets/img/projects/proj-1/main2.jpg"
-          alt="Avatar"
+          alt="Travel Image 1"
+          class="travel-image"
         />
-      </div>
-
-      <div class="image-container">
         <img
           src="{{ site.baseurl }}/assets/img/projects/proj-1/main3.jpg"
-          alt="Avatar"
+          alt="Travel Image 2"
+          class="travel-image"
         />
       </div>
     </div>
 
   </div>
 </section>
+
 <!-- Navigation Section -->
 <nav style="text-align: center; margin-top: 30px;">
   <div style="display: inline-block; padding: 10px 20px; background-color: #9b59b6; border-radius: 25px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;">
@@ -144,10 +144,27 @@ title: "Project One"
   nav div a:hover {
     color: #e0e0e0;
   }
+
   .jua-regular {
-  font-family: "Jua", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .travel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
 
 </style>
