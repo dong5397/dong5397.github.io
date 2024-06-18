@@ -87,6 +87,9 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  jekyll-feed
+  jekyll-seo-tag
+  jekyll-sitemap
   portfolio-jekyll-theme!
 
 BUNDLED WITH
